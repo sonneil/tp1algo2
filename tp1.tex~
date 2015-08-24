@@ -1,0 +1,111 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[paper=a4paper, left=1.5cm, right=1.5cm, bottom=1.5cm, top=3.5cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{latexsym}
+\usepackage{lastpage}
+\usepackage{aed2-symb,aed2-itef,aed2-tad, caratula}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+\usepackage{calc}
+
+\newcommand{\f}[1]{\text{#1}}
+\renewcommand{\paratodo}[2]{$\forall~#2$: #1}
+
+\sloppy
+
+%  \hypersetup{%
+%   % Para que el PDF se abra a página completa.
+%   pdfstartview= {FitH \hypercalcbp{\paperheight-\topmargin-1in-\headheight}},
+%   pdfauthor={Cátedra de Algoritmos y Estructuras de Datos II - DC - UBA},
+%   pdfkeywords={TADs básicos},
+%   pdfsubject={Tipos abstractos de datos básicos}
+%  }
+
+\parskip=5pt % 10pt es el tamaño de fuente
+
+% Pongo en 0 la distancia extra entre ítemes.
+\let\olditemize\itemize
+\def\itemize{\olditemize\itemsep=0pt}
+
+% Acomodo fancyhdr.
+\pagestyle{fancy}
+\thispagestyle{fancy}
+\addtolength{\headheight}{1pt}
+\lhead{Algoritmos y Estructuras de Datos II}
+\rhead{$1^{\mathrm{er}}$ cuatrimestre de 2015}
+\cfoot{\thepage /\pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\author{Algoritmos y Estructuras de Datos II, DC, UBA.}
+\date{}
+\title{Tipos abstractos de datos básicos}
+
+\begin{document}
+
+
+% Estos comandos deben ir antes del \maketitle
+\materia{Algoritmos y Estructuras de Datos II} % obligatorio
+\submateria{Primer Cuatrimestre de 2015} % opcional
+\titulo{Trabajo Práctico 1} % obligatorio
+\subtitulo{Especificación} % opcional
+
+
+\integrante{BENITEZ, Nelson}{945/13}{nelson.benitez92@gmail.com} % obligatorio 
+\integrante{ROIZMAN, Violeta}{273/11}{violeroizman@gmail.com} % obligatorio 
+\integrante{VÁZQUEZ, Jésica}{318/13}{jesis\_93@hotmail.com} % obligatorio 
+\integrante{ZAVALLA, Agustín}{670/13}{nkm747@gmail.com} % obligatorio 
+%Pagina de titulo e indice
+\thispagestyle{empty}
+
+\maketitle
+\tableofcontents
+
+\newpage
+
+
+\section{TAD \tadNombre{DCNet}}
+\begin{tad}{\tadNombre{DCNet}}
+\tadGeneros{dcnet}
+
+\tadIgualdadObservacional{dc}{dc'}{dcnet}{red(dc) $\igobs$ red(dc') $\land$ 
+	\\\\(\paratodo{compuID}{c}{,c$\in$compus(red(dc))$\land$c$\in$compus(red(dc'))})
+	\\(colaPaquetes(dc,c) $\igobs$ colaPaquetes(dc',c)) $\land$
+	\\\\(\paratodo{paqueteID}{p}{,p$\in$paquetes(dc)$\land$p$\in$paquetes(dc')}) 
+	\\(origenPaquete(dc,p)$\igobs$origenPaquete(dc',p)) $\land$
+	\\\\(\paratodo{paqueteID}{p}{,p$\in$paquetes(dc)$\land$p$\in$paquetes(dc')}) 
+	\\(destinoPaquete(dc,p)$\igobs$destinoPaquete(dc',p)) $\land$
+	\\\\(\paratodo{compuID}{c}{,c$\in$compus(red(dc))$\land$c$\in$compus(red(dc'))})
+	\\(\#paquetesEnviados(dc,c)$\igobs$\#paquetesEnviados(dc',c)) $\land$
+	\\\\(\paratodo{paqueteID}{p}{,p$\in$paquetes(dc)$\land$p$\in$paquetes(dc')}) 
+	\\(prioridad(dc,p)$\igobs$prioridad(dc',p))}
+
+\tadUsa{\tadNombre{Nat, Bool, Secu, Red, PaqueteID, compuID, Interfaz}}
+
+\tadExporta{\tadNombre{observadores básicos, generadores, caminoRecorrido, \#paquetesEnEspera, \\laQueMásEnvió}}
+
+\tadObservadores
+\tadOperacion{red}{dcnet}{red}{}
+
+\tadGeneradores
+
+\tadOperacion{nueva}{red}{dcnet}{}
+\tadOperacion{ingresarPaquete}{dcnet/dc,paqueteID/p,prioridad/pr,compuID/c_1,compuID/c_2}{dcnet}
+{$\neg(c_1=c_2) \land \neg(p \in paquetes(dc)) \land c_1 \in compus(red(dc)) \land c_2 \in  compus(red(dc)) \yluego existeCamino?(red(dc), c_1, c_2)$}
+\tadOtrasOperaciones
+
+\tadOperacion{caminoRecorrido}{dcnet/dc,paqueteID/p}{secu(tupla(compuID, interfaz))}{p $\in$ paquetes(dc)}
+
+\tadAxiomas[\paratodo{dcnet}{dc}, \paratodo{red}{r}, \paratodo{paqueteID}{p_{1},p_{2}}, \paratodo{compuID}{c_{1},c_{2},c_{3}},\\\paratodo{secu(tupla(compuID,interfaz)}{camino},\\\paratodo{conj(paqueteID)}{cpaq}]
+
+%que es esto? Es para que quede alineado y bonito y no se vaya de la hoja.
+\tadAlinearAxiomas{\#paquetesEnviados(ingresarPaquete($dc$,$p_1$,$c_1$,$c_2$),$c_3$),d 923)}
+\tadAlinearFunciones{encolarPaquetes(conjPaquetes,colaPrior)}{}
+
+\tadAxioma{red(nueva($r$))}{$r$}
+
+\end{tad}
+
+\end{document}

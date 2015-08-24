@@ -1,0 +1,155 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[paper=a4paper, left=1.5cm, right=1.5cm, bottom=1.5cm, top=3.5cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{latexsym}
+\usepackage{lastpage}
+\usepackage{aed2-symb,aed2-itef,aed2-tad}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+\usepackage{calc}
+
+\newcommand{\f}[1]{\text{#1}}
+\renewcommand{\paratodo}[2]{$\forall~#2$: #1}
+
+\sloppy
+
+\hypersetup{%
+ % Para que el PDF se abra a página completa.
+ pdfstartview= {FitH \hypercalcbp{\paperheight-\topmargin-1in-\headheight}},
+ pdfauthor={Cátedra de Algoritmos y Estructuras de Datos II - DC - UBA},
+ pdfkeywords={TADs básicos},
+ pdfsubject={Tipos abstractos de datos básicos}
+}
+
+\parskip=5pt % 10pt es el tamaño de fuente
+
+% Pongo en 0 la distancia extra entre ítemes.
+\let\olditemize\itemize
+\def\itemize{\olditemize\itemsep=0pt}
+
+% Acomodo fancyhdr.
+\pagestyle{fancy}
+\thispagestyle{fancy}
+\addtolength{\headheight}{1pt}
+\lhead{Algoritmos y Estructuras de Datos II}
+\rhead{$1^{\mathrm{er}}$ cuatrimestre de 2012}
+\cfoot{\thepage /\pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\author{Algoritmos y Estructuras de Datos II, DC, UBA.}
+\date{}
+\title{Tipos abstractos de datos básicos}
+
+\begin{document}
+
+%Pagina de titulo e indice
+\thispagestyle{empty}
+
+\maketitle
+\tableofcontents
+
+\newpage
+
+%TADS
+\section{TAD \tadNombre{Bool}}
+
+\begin{tad}{\tadNombre{Bool}}
+\tadGeneros{bool}
+\tadExporta{bool, generadores, $\neg$, $\lor$, $\land$, $\implies$, $\oluego$, $\yluego$, $\impluego$}
+
+\tadIgualdadObservacional{r}{r'}{computadora}{computadoras(r) \\
+$\igobs$ computadoras(r') $\land$ \paratodo{computadora}{c1,c2}\\
+ conectadas(r,c1,c2) $\igobs$ conectadas(r',c1,c2) $\land$ \\
+ interfaz(r,c1,c2) $\igobs$ interfaz(r',c1,c2)}
+%\tadAlinearFunciones{\argumento $\impluego$ \argumento}{bool,$\alpha$,$\alpha$}{bool}
+%\tadAlinearFunciones{\argumento $\impluego$ \argumento}{bool,$\alpha$,$\alpha$}{bool}
+
+\tadGeneradores
+
+\tadOperacion{crearRed}{}{red}{}
+\tadOperacion{agCompu}{red/r,compu/c}{red}
+	{$\lnot$(c $\in$ computadoras(r))}
+\tadOperacion{conectarCompus}{red/r,compu/c1,compu/c2,interfaz/i1,interfaz/i2}{red}
+	{c1,c2 $\in$ computadoras(r) $\land$ }
+
+\tadOtrasOperaciones
+\tadOperacion{$\neg$ \argumento}{bool}{bool}{}
+\tadOperacion{\argumento $\lor$ \argumento}{bool,bool}{bool}{}
+\tadOperacion{\argumento $\land$ \argumento}{bool,bool}{bool}{}
+\tadOperacion{\argumento $\implies$ \argumento}{bool,bool}{bool}{}
+\tadOperacion{\argumento $\oluego$ \argumento}{bool,bool}{bool}{}
+\tadOperacion{\argumento $\yluego$ \argumento}{bool,bool}{bool}{}
+\tadOperacion{\argumento $\impluego$ \argumento}{bool,bool}{bool}{}
+
+\tadAxiomas[\paratodo{red}{r}, \paratodo{compu}{c,c1,c2,c3,c4}, \paratodo{interfaz}{i,i1,i2}]
+%\tadAlinearAxiomas{false $\oluego$ $x$}
+\tadAxioma{computadoras(crearRed())}{$\emptyset$}
+\tadAxioma{computadoras(agCompu(r,c))}{Ag(c,computadoras(r))}
+\tadAxioma{computadoras(conectarCompus(r,c1,c2,i1,i2))}{computadoras(r)}
+
+\tadAxioma{conectadas?(agCompu(r,c),c1,c2)}{conectadas?(r,c1,c2)}
+\tadAxioma{conectadas?(conectarCompus(r,c1,c2,i1,i2),c3,c4)}{(c1 = c3 $\land$ c2 = c4) $\lor$ conectadas?(r,c3,c4) }
+
+\tadAxioma{conexion(agCompu(r,c),c1,c2)}{conexion(r,c1,c2)}
+\tadAxioma{conexion(conectarCompus(r,c1,c2,i1,i2),c3,c4)}{\IF(c1 = c3 $\land$ c2 = c4) THEN tupla(i1,i2) ELSE conexion(r,c3,c4) FI}
+ 
+\tadAxioma{$x$ $\yluego$ $y$}{\IF $x$ THEN $y$ ELSE false FI}
+\tadAxioma{$x$ $\oluego$ $y$}{\IF $x$ THEN true ELSE $y$ FI}
+\tadAxioma{$x$ $\impluego$ $y$}{$\neg x \oluego y$}
+
+\end{tad}
+
+\section{TAD \tadNombre{Nat}}
+
+\begin{tad}{\tadNombre{Nat}}
+\tadGeneros{nat}
+\tadExporta{nat, generadores, observadores, $+$, $-$, $\times$, $<$, $\leq$, $\min$, $\max$}
+\tadUsa{\tadNombre{Bool}}
+
+\tadIgualdadObservacional{n}{m}{nat}{$(n=0? \igobs m=0?)\ \yluego$\\ $(\neg(n=0?) \impluego (\text{pred}(n) \igobs \text{pred}(m)))$}
+\tadAlinearFunciones{\argumento = 0?}{nat/$n$,nat/$m$}
+\tadObservadores
+
+\tadOperacion{\argumento = 0?}{nat}{bool}{}
+\tadOperacion{pred}{nat/n}{nat}{$\neg(n=0?)$}
+
+\tadGeneradores
+
+\tadOperacion{0}{}{nat}{}
+\tadOperacion{suc}{nat}{nat}{}
+
+\tadOtrasOperaciones
+
+\tadOperacion{\argumento $+$ \argumento}{nat,nat}{nat}{}
+\tadOperacion{\argumento $-$ \argumento}{nat/n,nat/m}{nat}{$m \leq n$}
+\tadOperacion{\argumento $\times$ \argumento}{nat,nat}{nat}{}
+\tadOperacion{\argumento $<$ \argumento}{nat,nat}{bool}{}
+\tadOperacion{\argumento $\leq$ \argumento}{nat,nat}{bool}{}
+\tadOperacion{$\min$}{nat,nat}{nat}{}
+\tadOperacion{$\max$}{nat,nat}{nat}{}
+
+\tadAxiomas[\paratodo{nat}{n, m}]
+\tadAlinearAxiomas{pred(suc($n$))}
+\tadAxioma{$0=0?$}{true}
+\tadAxioma{suc($n$)$=0?$}{false}
+
+\tadAxioma{pred(suc($n$))}{$n$}
+
+\tadAxioma{$n+m$}{\IF\ $m=0?$ THEN $n$ ELSE suc($n$ $+$ pred($m$)) FI}
+\tadAxioma{$n-m$}{\IF\ $m=0?$ THEN $n$ ELSE pred($n$) $-$ pred($m$) FI}
+\tadAxioma{$n \times m$}{\IF\ $m=0?$ THEN $0$ ELSE $n$ $\times$ pred($m$) $+$ $n$ FI}
+
+\tadAxioma{$n < m$}{$\lnot(m=0?)$ $\yluego$ $(n=0? \oluego\ \text{pred}(n)<\text{pred}(m))$}
+
+\tadAxioma{$n \leq m$}{$n < m \lor n = m$}
+
+\tadAxioma{$\min(n, m)$}{\IF\ $m < n$ THEN $m$ ELSE $n$ FI}
+
+\tadAxioma{$\max(n, m)$}{\IF\ $m < n$ THEN $n$ ELSE $m$ FI}
+
+\end{tad}
+
+\end{document}
