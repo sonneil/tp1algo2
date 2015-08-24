@@ -79,16 +79,18 @@
 \tadObservadores
 \tadOperacion{campus}{as}{campus}{}
 \tadOperacion{seguridad}{as}{conj(seguridad)}{}
-\tadOperacion{hayEst?}{as/a,pos/p}{bool}{$posValida(a,p)$}
-\tadOperacion{hayHippie?}{as/a,pos/p}{bool}{$posValida(a,p)$}
+\tadOperacion{hayEst?}{as/a,pos/p}{bool}{$posValida(campus(a),p)$}
+\tadOperacion{hayHippie?}{as/a,pos/p}{bool}{$posValida(campus(a),p)$}
 \tadOperacion{posSeg}{as/a,seg/s}{pos}{$s \in seguridad(a)$}
+\tadOperacion{\#capturas}{as/a,seg/s}{nat}{$s \in seguridad(a)$}
+\tadOperacion{\#sanciones}{as/a,seg/s}{nat}{$s \in seguridad(a)$}
 
 \tadGeneradores
 
-\tadOperacion{nueva}{campus,conj(seguridad)}{as}{}
+\tadOperacion{nueva}{campus,conj(seguridad)}{as}{(\paratodo{e}{segs}) posValida(c,pos(e)) $\land$ (\paratodo{s,s1}{segs}) id(s)!=id(s1) $\implies$ pos(s)!=pos(s1)}
 \tadOperacion{moverEst}{as/a,pos/pe,pos/pd}{as}{}
-\tadOperacion{nuevoEst}{as/a,pos/p}{as}{$posValida(a,pe) \yluego hayEst?(a,p) \land adyacente(campus(a),pe,pd) \land posValidaPersona(as,pd)$}
-\tadOperacion{nuevoHippie}{as/a,pos/p}{as}{$posIngreso(a,p) \land posValidaPersona(a,p)$}
+\tadOperacion{nuevoEst}{as/a,pos/p}{as}{$posValida(campus(a),pe) \yluego hayEst?(a,p) \land adyacente(campus(a),pe,pd) \land posValidaPersona(as,pd)$}
+\tadOperacion{nuevoHippie}{as/a,pos/p}{as}{$posIngreso(campus(a),p) \land posValidaPersona(a,p)$}
 \tadOperacion{sacarEst}{as/a,pos/p}{as}{$posValida(campus(a),p) \yluego hayEst?(a,p) \land posIngreso(a,p)$}
 
 \tadOtrasOperaciones
