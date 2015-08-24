@@ -66,37 +66,37 @@
 \newpage
 
 
-\section{TAD \tadNombre{DCNet}}
-\begin{tad}{\tadNombre{DCNet}}
-\tadGeneros{dcnet}
+\section{TAD \tadNombre{AS}}
+\begin{tad}{\tadNombre{AS}}
+\tadGeneros{as}
 
-\tadIgualdadObservacional{dc}{dc'}{dcnet}{red(dc) $\igobs$ red(dc') $\land$ 
-	\\\\(\paratodo{compuID}{c}{,c$\in$compus(red(dc))$\land$c$\in$compus(red(dc'))})
-	\\(colaPaquetes(dc,c) $\igobs$ colaPaquetes(dc',c)) $\land$
-	\\\\(\paratodo{paqueteID}{p}{,p$\in$paquetes(dc)$\land$p$\in$paquetes(dc')}) 
-	\\(origenPaquete(dc,p)$\igobs$origenPaquete(dc',p)) $\land$
-	\\\\(\paratodo{paqueteID}{p}{,p$\in$paquetes(dc)$\land$p$\in$paquetes(dc')}) 
-	\\(destinoPaquete(dc,p)$\igobs$destinoPaquete(dc',p)) $\land$
-	\\\\(\paratodo{compuID}{c}{,c$\in$compus(red(dc))$\land$c$\in$compus(red(dc'))})
-	\\(\#paquetesEnviados(dc,c)$\igobs$\#paquetesEnviados(dc',c)) $\land$
-	\\\\(\paratodo{paqueteID}{p}{,p$\in$paquetes(dc)$\land$p$\in$paquetes(dc')}) 
-	\\(prioridad(dc,p)$\igobs$prioridad(dc',p))}
+\tadIgualdadObservacional{dc}{dc'}{dcnet}{}
 
-\tadUsa{\tadNombre{Nat, Bool, Secu, Red, PaqueteID, compuID, Interfaz}}
+\tadUsa{\tadNombre{campus}}
 
-\tadExporta{\tadNombre{observadores básicos, generadores, caminoRecorrido, \#paquetesEnEspera, \\laQueMásEnvió}}
+\tadExporta{\tadNombre{}}
 
 \tadObservadores
-\tadOperacion{red}{dcnet}{red}{}
+\tadOperacion{campus}{as}{campus}{}
+\tadOperacion{seguridad}{as}{conj(seguridad)}{}
+\tadOperacion{hayEst?}{as/a,pos/p}{bool}{$posValida(a,p)$}
+\tadOperacion{hayHippie?}{as/a,pos/p}{bool}{$posValida(a,p)$}
+\tadOperacion{posSeg}{as/a,seg/s}{pos}{$s \in seguridad(a)$}
 
 \tadGeneradores
 
-\tadOperacion{nueva}{red}{dcnet}{}
-\tadOperacion{ingresarPaquete}{dcnet/dc,paqueteID/p,prioridad/pr,compuID/c_1,compuID/c_2}{dcnet}
-{$\neg(c_1=c_2) \land \neg(p \in paquetes(dc)) \land c_1 \in compus(red(dc)) \land c_2 \in  compus(red(dc)) \yluego existeCamino?(red(dc), c_1, c_2)$}
+\tadOperacion{nueva}{campus,conj(seguridad)}{as}{}
+\tadOperacion{moverEst}{as/a,pos/pe,pos/pd}{as}{}
+\tadOperacion{nuevoEst}{as/a,pos/p}{as}{$posValida(a,pe) \yluego hayEst?(a,p) \land adyacente(campus(a),pe,pd) \land posValidaPersona(as,pd)$}
+\tadOperacion{nuevoHippie}{as/a,pos/p}{as}{$posIngreso(a,p) \land posValidaPersona(a,p)$}
+\tadOperacion{sacarEst}{as/a,pos/p}{as}{$posValida(campus(a),p) \yluego hayEst?(a,p) \land posIngreso(a,p)$}
+
 \tadOtrasOperaciones
 
-\tadOperacion{caminoRecorrido}{dcnet/dc,paqueteID/p}{secu(tupla(compuID, interfaz))}{p $\in$ paquetes(dc)}
+\tadOperacion{haySeg?}{as/a,pos/p}{bool}{}
+\tadOperacion{adyacente}{as/a,pos/pe,pos/pd}{bool}{}
+\tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{}
+\tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
 
 \tadAxiomas[\paratodo{dcnet}{dc}, \paratodo{red}{r}, \paratodo{paqueteID}{p_{1},p_{2}}, \paratodo{compuID}{c_{1},c_{2},c_{3}},\\\paratodo{secu(tupla(compuID,interfaz)}{camino},\\\paratodo{conj(paqueteID)}{cpaq}]
 
@@ -107,5 +107,41 @@
 \tadAxioma{red(nueva($r$))}{$r$}
 
 \end{tad}
+
+
+\section{TAD \tadNombre{campus}}
+\begin{tad}{\tadNombre{campus}}
+\tadGeneros{campus}
+
+\tadUsa{\tadNombre{campus}}
+
+\tadExporta{\tadNombre{}}
+
+\tadObservadores
+\tadOperacion{alto}{campus}{nat}{}
+\tadOperacion{ancho}{campus}{nat}{}
+\tadOperacion{obstaculos}{campus}{conj(pos)}{}
+
+\tadGeneradores
+
+\tadOperacion{nuevo}{nat/ancho,nat/alto,conj(pos)/obst}{campus}{$1 \le ancho \land 1 \le alto$ $\land$ (\paratodo{pos}{p}) $p \in obst \impluego posValida(c,p)$}
+
+\tadOtrasOperaciones
+
+\tadOperacion{haySeg?}{as/a,pos/p}{bool}{}
+\tadOperacion{adyacente}{as/a,pos/pe,pos/pd}{bool}{}
+\tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{}
+\tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
+
+\tadAxiomas[\paratodo{dcnet}{dc}, \paratodo{red}{r}, \paratodo{paqueteID}{p_{1},p_{2}}, \paratodo{compuID}{c_{1},c_{2},c_{3}},\\\paratodo{secu(tupla(compuID,interfaz)}{camino},\\\paratodo{conj(paqueteID)}{cpaq}]
+
+%que es esto? Es para que quede alineado y bonito y no se vaya de la hoja.
+\tadAlinearAxiomas{\#paquetesEnviados(ingresarPaquete($dc$,$p_1$,$c_1$,$c_2$),$c_3$),d 923)}
+\tadAlinearFunciones{encolarPaquetes(conjPaquetes,colaPrior)}{}
+
+\tadAxioma{red(nueva($r$))}{$r$}
+
+\end{tad}
+
 
 \end{document}
