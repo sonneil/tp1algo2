@@ -87,15 +87,14 @@
 \tadGeneradores
 
 \tadOperacion{nueva}{campus,conj(seguridad)}{as}{(\paratodo{e}{segs}) posValida(c,pos(e)) $\land$ (\paratodo{s,s1}{segs}) id(s)!=id(s1) $\implies$ pos(s)!=pos(s1)}
-\tadOperacion{moverEst}{as/a,pos/pe,pos/pd}{as}{}
-\tadOperacion{nuevoEst}{as/a,pos/p}{as}{$posValida(campus(a),pe) \yluego hayEst?(a,p) \land adyacente(campus(a),pe,pd) \land posValidaPersona(as,pd)$}
+\tadOperacion{moverEst}{as/a,pos/pe,pos/pd}{as}{$posValida(campus(a),pe) \yluego hayEst?(a,pe) \land adyacente(campus(a),pe,pd) \land posValidaPersona(as,pd)$}
 \tadOperacion{nuevoHippie}{as/a,pos/p}{as}{$posIngreso(campus(a),p) \land posValidaPersona(a,p)$}
+\tadOperacion{nuevoEst}{as/a,pos/p}{as}{$posIngreso(campus(a),p) \land posValidaPersona(a,p)$}
 \tadOperacion{sacarEst}{as/a,pos/p}{as}{$posValida(campus(a),p) \yluego hayEst?(a,p) \land posIngreso(a,p)$}
 
 \tadOtrasOperaciones
 
 \tadOperacion{haySeg?}{as/a,pos/p}{bool}{}
-\tadOperacion{adyacente}{as/a,pos/pe,pos/pd}{bool}{}
 \tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{}
 \tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
 
@@ -114,7 +113,15 @@
 \tadAxioma{seguridad(nuevoEst($a,p_1$))}{$campus(a)$}
 \tadAxioma{seguridad(nuevoHippie($a,p_1$))}{$campus(a)$}
 \tadAxioma{seguridad(sacarEst($a,p_1$))}{$campus(a)$}
-
+\tadAxioma{hayEst?(nueva($c,segs$),$p$)}{$False$}
+\tadAxioma{hayEst?(nuevoEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI}
+\tadAxioma{hayEst?(moverEst($a,p_1,p_2$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE {\IF $p_2=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI} FI}
+\tadAxioma{hayEst?(nuevoHippie($a,p_1$),$p$)}{$hayEst?(a,p)$}
+\tadAxioma{hayEst?(sacarEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE $hayEst?(a,p)$ FI}
+\tadAxioma{hayHippie?(nueva($c,segs$),$p$)}{$False$}
+\tadAxioma{hayHippie?((nuevoHippie($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayHippie?(a,p)$ FI}
+\tadAxioma{\#capturas(nueva($c,segs$),$p$)}{$0$}
+\tadAxioma{\#sanciones(nueva($c,segs$),$p$)}{$0$}
 \end{tad}
 
 
