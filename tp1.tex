@@ -81,7 +81,6 @@
 \tadOperacion{seguridad}{as}{conj(seguridad)}{}
 \tadOperacion{hayEst?}{as/a,pos/p}{bool}{$posValida(campus(a),p)$}
 \tadOperacion{hayHippie?}{as/a,pos/p}{bool}{$posValida(campus(a),p)$}
-\tadOperacion{posSeg}{as/a,seg/s}{pos}{$s \in seguridad(a)$}
 \tadOperacion{\#capturas}{as/a,seg/s}{nat}{$s \in seguridad(a)$}
 \tadOperacion{\#sanciones}{as/a,seg/s}{nat}{$s \in seguridad(a)$}
 
@@ -100,13 +99,21 @@
 \tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{}
 \tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
 
-\tadAxiomas[\paratodo{dcnet}{dc}, \paratodo{red}{r}, \paratodo{paqueteID}{p_{1},p_{2}}, \paratodo{compuID}{c_{1},c_{2},c_{3}},\\\paratodo{secu(tupla(compuID,interfaz)}{camino},\\\paratodo{conj(paqueteID)}{cpaq}]
+\tadAxiomas[]
 
-%que es esto? Es para que quede alineado y bonito y no se vaya de la hoja.
 \tadAlinearAxiomas{\#paquetesEnviados(ingresarPaquete($dc$,$p_1$,$c_1$,$c_2$),$c_3$),d 923)}
 \tadAlinearFunciones{encolarPaquetes(conjPaquetes,colaPrior)}{}
 
-\tadAxioma{red(nueva($r$))}{$r$}
+\tadAxioma{campus(nueva($c,segs$))}{$c$}
+\tadAxioma{campus(moverEst($a,p_1,p_2$))}{$campus(a)$}
+\tadAxioma{campus(nuevoEst($a,p_1$))}{$campus(a)$}
+\tadAxioma{campus(nuevoHippie($a,p_1$))}{$campus(a)$}
+\tadAxioma{campus(sacarEst($a,p_1$))}{$campus(a)$}
+\tadAxioma{seguridad(nueva($c,segs$))}{$segs$}
+\tadAxioma{seguridad(moverEst($a,p_1,p_2$))}{$moverTodos(seguridad(a))$}
+\tadAxioma{seguridad(nuevoEst($a,p_1$))}{$campus(a)$}
+\tadAxioma{seguridad(nuevoHippie($a,p_1$))}{$campus(a)$}
+\tadAxioma{seguridad(sacarEst($a,p_1$))}{$campus(a)$}
 
 \end{tad}
 
