@@ -17,16 +17,16 @@
 \sloppy
 
 %  \hypersetup{%
-%   % Para que el PDF se abra a página completa.
+%   % Para que el PDF se abra a pï¿½gina completa.
 %   pdfstartview= {FitH \hypercalcbp{\paperheight-\topmargin-1in-\headheight}},
-%   pdfauthor={Cátedra de Algoritmos y Estructuras de Datos II - DC - UBA},
-%   pdfkeywords={TADs básicos},
-%   pdfsubject={Tipos abstractos de datos básicos}
+%   pdfauthor={Cï¿½tedra de Algoritmos y Estructuras de Datos II - DC - UBA},
+%   pdfkeywords={TADs bï¿½sicos},
+%   pdfsubject={Tipos abstractos de datos bï¿½sicos}
 %  }
 
-\parskip=5pt % 10pt es el tamaño de fuente
+\parskip=5pt % 10pt es el tamaï¿½o de fuente
 
-% Pongo en 0 la distancia extra entre ítemes.
+% Pongo en 0 la distancia extra entre ï¿½temes.
 \let\olditemize\itemize
 \def\itemize{\olditemize\itemsep=0pt}
 
@@ -41,7 +41,7 @@
 
 \author{Algoritmos y Estructuras de Datos II, DC, UBA.}
 \date{}
-\title{Tipos abstractos de datos básicos}
+\title{Tipos abstractos de datos bï¿½sicos}
 
 \begin{document}
 
@@ -49,14 +49,14 @@
 % Estos comandos deben ir antes del \maketitle
 \materia{Algoritmos y Estructuras de Datos II} % obligatorio
 \submateria{Primer Cuatrimestre de 2015} % opcional
-\titulo{Trabajo Práctico 1} % obligatorio
-\subtitulo{Especificación} % opcional
+\titulo{Trabajo Prï¿½ctico 1} % obligatorio
+\subtitulo{Especificaciï¿½n} % opcional
 
 
 \integrante{BENITEZ, Nelson}{945/13}{nelson.benitez92@gmail.com} % obligatorio 
 \integrante{ROIZMAN, Violeta}{273/11}{violeroizman@gmail.com} % obligatorio 
-\integrante{VÁZQUEZ, Jésica}{318/13}{jesis\_93@hotmail.com} % obligatorio 
-\integrante{ZAVALLA, Agustín}{670/13}{nkm747@gmail.com} % obligatorio 
+\integrante{Vï¿½ZQUEZ, Jï¿½sica}{318/13}{jesis\_93@hotmail.com} % obligatorio 
+\integrante{ZAVALLA, Agustï¿½n}{670/13}{nkm747@gmail.com} % obligatorio 
 %Pagina de titulo e indice
 \thispagestyle{empty}
 
@@ -130,19 +130,23 @@
 
 \tadOtrasOperaciones
 
-\tadOperacion{haySeg?}{as/a,pos/p}{bool}{}
-\tadOperacion{adyacente}{as/a,pos/pe,pos/pd}{bool}{}
-\tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{}
+\tadOperacion{adyacente}{as/a,pos/pe,pos/pd}{bool}{$posValida(c,pe) \land posValida(c,pd)$}
+\tadOperacion{posValida}{as/a,pos/p}{bool}{}
 \tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
 
-\tadAxiomas[\paratodo{dcnet}{dc}, \paratodo{red}{r}, \paratodo{paqueteID}{p_{1},p_{2}}, \paratodo{compuID}{c_{1},c_{2},c_{3}},\\\paratodo{secu(tupla(compuID,interfaz)}{camino},\\\paratodo{conj(paqueteID)}{cpaq}]
+\tadAxiomas[\paratodo{nat}{alto}, \paratodo{nat}{ancho}, \paratodo{conj (pos)}{obst}
+\\\paratodo{pos}{p _1} \paratodo {pos}{p _2}]
 
 %que es esto? Es para que quede alineado y bonito y no se vaya de la hoja.
 \tadAlinearAxiomas{\#paquetesEnviados(ingresarPaquete($dc$,$p_1$,$c_1$,$c_2$),$c_3$),d 923)}
 \tadAlinearFunciones{encolarPaquetes(conjPaquetes,colaPrior)}{}
 
-\tadAxioma{red(nueva($r$))}{$r$}
-
+\tadAxioma{alto(nuevo($ancho$,$alto$,$obst$))}{$alto$}
+\tadAxioma{ancho(nuevo($ancho$,$alto$,$obst$))}{$ancho$}
+\tadAxioma{obstaculos(nuevo($ancho$,$alto$,$obst$))}{$obst$}
+\tadAxioma{posValida(nuevo($ancho$,$alto$,$obst$),$p_1$)}{$\pi_1(p_1)<ancho \land \pi_2(p_1)<alto$}
+\tadAxioma{adyacente(nuevo($ancho$,$alto$,$obst$),$p _1$,$p _2$)}{$(\pi_1(p_1)=\pi_1(p_2)-1 \lor\pi_1(p_1)=\pi_1(p_2)+1)\land (\pi_2(p_1)=\pi_2(p_2)-1 \lor\pi_2(p_1)=\pi_2(p_2)+1)$}
+\tadAxioma{posValida(nuevo($ancho$,$alto$,$obst$),$p_1$)}{$\pi_2(p_1)=alto-1 \lor \pi_2(p_1)=0$}
 \end{tad}
 
 
