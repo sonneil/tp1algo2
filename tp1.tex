@@ -97,10 +97,14 @@
 \tadOperacion{haySeg?}{as/a,pos/p}{bool}{}
 \tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{}
 \tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
+\tadOperacion{moverTodos}{as/a,conj(seguridad)/segs}{conj(seguridad)}{}
+\tadOperacion{moverSeg}{as/a,seguridad/seg,pos/posSig}{seguridad}{}
+\tadOperacion{proximasPosiciones}{as/a,conj(pos)/minPos,pos/posAct}{conj(pos)}{$\neg(emptyset?(minPos)) \yluego posValida(campus(a),posAct) \land posicionesValidas(campus(a),minPos)$}
+\tadOperacion{hippiesMasCerca}{as/a,seguridad/seg}{conj(pos)}{$seg \in seguridad(a) \land hayHippies(a)$}
 
 \tadAxiomas[]
 
-\tadAlinearAxiomas{\#paquetesEnviados(ingresarPaquete($dc$,$p_1$,$c_1$,$c_2$),$c_3$),d 923)}
+\tadAlinearAxiomas{\#paquetesEnviados(ingresarPaquete($dc$,$p_1$,$c_1$))}
 \tadAlinearFunciones{encolarPaquetes(conjPaquetes,colaPrior)}{}
 
 \tadAxioma{campus(nueva($c,segs$))}{$c$}
@@ -122,6 +126,72 @@
 \tadAxioma{hayHippie?((nuevoHippie($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayHippie?(a,p)$ FI}
 \tadAxioma{\#capturas(nueva($c,segs$),$p$)}{$0$}
 \tadAxioma{\#sanciones(nueva($c,segs$),$p$)}{$0$}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Axiomas otras operaciones%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\tadAxioma{moverTodos(a,segs)}{\IF $(\emptyset?(segs))$ THEN 
+								   $\emptyset$ 
+							   ELSE 
+								   {\IF $(hayHippies?(a))$ THEN 
+										$Ag(moverTodos(a, sinUno(segs)), $
+										\\$moverSeg(a,dameUno(segs),$
+										\\$dameUno(proxPosiciones$\\ $ $ $(hippiesMasCerca(a,dameUno(segs))))))$ 
+								    ELSE 
+										$segs$ 
+									FI} 
+							   FI}
+\tadAxioma{moverSeg(a,seg,nPos)}{\IF $(distMan(campus(a),\pi_2(seg),nPos) \ge 2$ \\$ \lor \neg(posValida(campus(a),nPos)))$ THEN
+									$seg$
+								 ELSE
+									$<\pi_1(seg),nPos>$
+								 FI}
+\tadAxioma{proximasPosiciones(hscerca, posSeg)}{\IF $\emptyset?(hscerca)$  THEN 
+														$\emptyset$ 
+											    ELSE 
+													{\IF $\pi_1(dameUno(hscerca))>\pi_1(posSeg)$ THEN 
+															{\IF $\pi_2(dameUno(hscerca))>\pi_2(posSeg)$ THEN 
+																$\{<\pi_1(posSeg)+1,\pi_2(posSeg)>,$\\
+																$<\pi_1(posSeg),\pi_2(posSeg)+1>\}$\\
+																$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$ 
+															ELSE 
+																{\IF $\pi_2(dameUno(hscerca))<\pi_2(posSeg)$ THEN 
+																	$\{<\pi_1(posSeg)+1,\pi_2(posSeg)>,$\\
+																	$<\pi_1(posSeg),\pi_2(posSeg)-1>\}$\\
+																	$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
+																ELSE 
+																	$\{<\pi_1(posSeg)+1,\pi_2(posSeg)>\}$\\
+																	$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
+																FI}
+															FI}
+													ELSE
+														{\IF $\pi_1(dameUno(hscerca))<\pi_1(posSeg)$ THEN 
+															{\IF $\pi_2(dameUno(hscerca))>\pi_2(posSeg)$ THEN 
+																$\{<\pi_1(posSeg)-1,\pi_2(posSeg)>,$\\
+																$<\pi_1(posSeg),\pi_2(posSeg)+1>\}$\\
+																$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$ 
+															ELSE 
+																{\IF $\pi_2(dameUno(hscerca))<\pi_2(posSeg)$ THEN 
+																	$\{<\pi_1(posSeg)-1,\pi_2(posSeg)>,$\\
+																	$<\pi_1(posSeg),\pi_2(posSeg)-1>\}$\\
+																	$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
+																ELSE 
+																	$\{<\pi_1(posSeg)-1,\pi_2(posSeg)>\}$\\
+																	$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
+																FI}
+															FI}
+														ELSE
+															{\IF $\pi_2(dameUno(hscerca))>\pi_2(posSeg)$ THEN 
+																$\{<\pi_1(posSeg),\pi_2(posSeg)+1>\}$\\
+																$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$ 
+															ELSE 
+																$\{<\pi_1(posSeg),\pi_2(posSeg)-1>\}$\\
+																$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
+															FI}
+														FI}
+													FI} 
+												FI}
+\tadAxioma{hippiesMasCerca(a,seg)}{$minDistsPos(campus(a),\pi_2(seg),posHippies(a))$}
+
 \end{tad}
 
 
@@ -147,6 +217,10 @@
 \tadOperacion{adyacente}{as/a,pos/pe,pos/pd}{bool}{$posValida(c,pe) \land posValida(c,pd)$}
 \tadOperacion{posValida}{as/a,pos/p}{bool}{}
 \tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
+\tadOperacion{minDistsPos}{campus/c,pos/p,conj(pos)/posiciones}{conj(pos)}{$\neg(\emptyset?(posiciones))$}
+\tadOperacion{minDist}{campus/c,pos/p,conj(posiciones)/posiciones}{nat}{$\neg(\emptyset?(posiciones))$}
+\tadOperacion{distMan}{campus/c,pos/p1,pos/p2}{nat}{}
+\tadOperacion{abs}{nat,nat}{nat}{}
 
 \tadAxiomas[\paratodo{nat}{alto}, \paratodo{nat}{ancho}, \paratodo{conj (pos)}{obst}
 \\\paratodo{pos}{p _1} \paratodo {pos}{p _2}]
@@ -161,6 +235,27 @@
 \tadAxioma{posValida(nuevo($ancho$,$alto$,$obst$),$p_1$)}{$\pi_1(p_1)<ancho \land \pi_2(p_1)<alto$}
 \tadAxioma{adyacente(nuevo($ancho$,$alto$,$obst$),$p _1$,$p _2$)}{$(\pi_1(p_1)=\pi_1(p_2)-1 \lor\pi_1(p_1)=\pi_1(p_2)+1)\land (\pi_2(p_1)=\pi_2(p_2)-1 \lor\pi_2(p_1)=\pi_2(p_2)+1)$}
 \tadAxioma{posValida(nuevo($ancho$,$alto$,$obst$),$p_1$)}{$\pi_2(p_1)=alto-1 \lor \pi_2(p_1)=0$}
+\tadAxioma{minDistsPos(c,p,posiciones)}{\IF $\emptyset?(sinUno(posiciones))$ THEN
+											$dameUno(posiciones)$
+									   ELSE
+											{\IF $distMan(c,p,dameUno(posiciones)) \le minDist(c,p,posiciones)$ THEN
+												$Ag(minDistsPos(c,sinUno(posiciones)),$\\$dameUno(posiciones))$
+											ELSE
+												$minDistsPos(c,seg,sinUno(posiciones))$
+											FI}
+									   FI}
+\tadAxioma{minDist(c,p,posiciones)}{\IF $\emptyset?(sinUno(posiciones))$ THEN 
+										$distMan(c,p,dameUno(posiciones))$
+   								     ELSE
+										{\IF $distMan(c,p,dameUno(posiciones)) \le minDist(c,pos/p,sinUno(posiciones))$ THEN
+											$distMan(c,p,dameUno(posiciones))$
+										ELSE 
+											$minDist(c,p,sinUno(posiciones))$
+										FI}
+								     FI}
+\tadAxioma{distMan(c,$p_1$,$p_2$)}{$restaAbs(\pi_2(p_1),\pi_2(p_2))$+$restaAbs(\pi_1(p_1),\pi_1(p_2))$}
+
+\tadAxioma{restaAbs(n1,n2)}{\IF $n2 > n1$ THEN $n2-n1$ ELSE $n1-n2$ FI}
 \end{tad}
 
 
