@@ -124,6 +124,12 @@
 \tadAxioma{hayEst?(sacarEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE $hayEst?(a,p)$ FI}
 \tadAxioma{hayHippie?(nueva($c,segs$),$p$)}{$False$}
 \tadAxioma{hayHippie?((nuevoHippie($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayHippie?(a,p)$ FI}
+
+
+\tadAxioma{hayHippie?(nuevoEst($a,p_1$),$p$)}{$hayHippie?(a,p)$}
+\tadAxioma{hayHippie?(sacarEst($a,p_1$),$p$)}{$hayHippie?(a,p)$}
+
+
 \tadAxioma{\#capturas(nueva($c,segs$),$p$)}{$0$}
 \tadAxioma{\#sanciones(nueva($c,segs$),$p$)}{$0$}
 
