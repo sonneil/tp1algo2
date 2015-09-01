@@ -113,8 +113,8 @@
 \tadAxioma{campus(nuevoHippie($a,p_1$))}{$campus(a)$}
 \tadAxioma{campus(sacarEst($a,p_1$))}{$campus(a)$}
 \tadAxioma{seguridad(nueva($c,segs$))}{$segs$}
-\tadAxioma{seguridad(moverEst($a,p_1,p_2$))}{$moverTodos(seguridad(a))$}
-\tadAxioma{seguridad(nuevoEst($a,p_1$))}{$campus(a)$}
+\tadAxioma{seguridad(moverEst($a,p_1,p_2$))}{$moverTodos(a, seguridad(a))$}
+\tadAxioma{seguridad(nuevoEst($a,p_1$))}{$a, campus(a)$}
 \tadAxioma{seguridad(nuevoHippie($a,p_1$))}{$campus(a)$}
 \tadAxioma{seguridad(sacarEst($a,p_1$))}{$campus(a)$}
 \tadAxioma{hayEst?(nueva($c,segs$),$p$)}{$False$}
