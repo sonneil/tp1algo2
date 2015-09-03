@@ -137,6 +137,11 @@
 \tadAxioma{\#capturas(nuevoHippie($a,p_1$),$s$)}{\IF $(adyacente(a,p_1,posSeg(a,s))$ THEN $1 + \#capturas(a,s)$ ELSE $\#capturas(a,s)$ FI}
 \tadAxioma{\#capturas(nuevoEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 \tadAxioma{\#capturas(sacarEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
+\tadAxioma{\#capturas($a$,moverSeg($a,s,p_1$))}{$
+β(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayHippie?(a,<\pi_1(p_1)+1,\pi_2(p_1)>)) + 
+β(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayHippie?(a,<\pi_1(p_1)-1,\pi_2(p_1)>)) + 
+β(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)+1>)) + 
+β(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)-1>)) + \#capturas(a,s)$}
 
 
 \tadAxioma{\#sanciones(nueva($a,segs$),$s$)}{$0$}
@@ -144,11 +149,11 @@
 \tadAxioma{\#sanciones(nuevoHippie($a,p_1$),$s$)}{\IF $(cercanos?(a,p_1,posSeg(a,s)) \yluego (hayEst?(casilleroEnComun(a,p_1,posSeg(a,s))) \land encerrado(casilleroEnComun(a,p_1,posSeg(a,s)))))$ THEN $1 + \#sanciones(a,s)$ ELSE $\#sanciones(a,s)$ FI}
 \tadAxioma{\#sanciones(nuevoEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones(sacarEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
-\tadAxioma{\#sanciones($a$,moverSeg($a,s,p_1$))}{($
-β(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayEst?<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)+1,\pi_2(p_1)>))) + 
-β(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayEst?(<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)-1,\pi_2(p_1)>))) + 
-β(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayEst?(<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + 
-β(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayEst?(<\pi_1(p_1),\pi_2(p_1)-1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)-1>))) + \#sanciones(a,s)$}
+\tadAxioma{\#sanciones($a$,moverSeg($a,s,p_1$))}{$
+β(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayEst?(a,<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)+1,\pi_2(p_1)>))) + 
+β(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayEst?(a,<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)-1,\pi_2(p_1)>))) + 
+β(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayEst?(a,<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + 
+β(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayEst?(a,<\pi_1(p_1),\pi_2(p_1)-1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)-1>))) + \#sanciones(a,s)$}
 
 
 
