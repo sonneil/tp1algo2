@@ -101,6 +101,8 @@
 \tadOperacion{moverSeg}{as/a,seguridad/seg,pos/posSig}{seguridad}{}
 \tadOperacion{proximasPosiciones}{as/a,conj(pos)/minPos,pos/posAct}{conj(pos)}{$\neg(emptyset?(minPos)) \yluego posValida(campus(a),posAct) \land posicionesValidas(campus(a),minPos)$}
 \tadOperacion{hippiesMasCerca}{as/a,seguridad/seg}{conj(pos)}{$seg \in seguridad(a) \land hayHippies(a)$}
+\tadOperacion{encerrado}{as/a,pos/p}{bool}{hayEst?(p)}
+
 
 \tadAxiomas[]
 
@@ -142,6 +144,11 @@
 \tadAxioma{\#sanciones(nuevoHippie($a,p_1$),$s$)}{\IF $(cercanos?(a,p_1,posSeg(a,s)) \yluego (hayEst?(casilleroEnComun(a,p_1,posSeg(a,s))) \land encerrado(casilleroEnComun(a,p_1,posSeg(a,s)))))$ THEN $1 + \#sanciones(a,s)$ ELSE $\#sanciones(a,s)$ FI}
 \tadAxioma{\#sanciones(nuevoEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones(sacarEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
+\tadAxioma{\#sanciones($a$,moverSeg($a,s,p_1$))}{($
+β(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayEst?<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)+1,\pi_2(p_1)>))) + 
+β(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayEst?(<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)-1,\pi_2(p_1)>))) + 
+β(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayEst?(<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + 
+β(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayEst?(<\pi_1(p_1),\pi_2(p_1)-1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)-1>))) + \#sanciones(a,s)$}
 
 
 
