@@ -102,7 +102,13 @@
 \tadOperacion{proximasPosiciones}{as/a,conj(pos)/minPos,pos/posAct}{conj(pos)}{$\neg(emptyset?(minPos)) \yluego posValida(campus(a),posAct) \land posicionesValidas(campus(a),minPos)$}
 \tadOperacion{hippiesMasCerca}{as/a,seguridad/seg}{conj(pos)}{$seg \in seguridad(a) \land hayHippies(a)$}
 \tadOperacion{encerrado}{as/a,pos/p}{bool}{hayEst?(p)}
-
+\tadOperacion{\#hippies}{as/a}{nat}{}
+\tadOperacion{\#estudiantes}{as/a}{nat}{}
+\tadOperacion{\#masVigilante}{as/a}{nat}{}
+\tadOperacion{contarHippies}{as/a,conj(pos)/poss}{nat}{}
+\tadOperacion{contarEstudiantes}{as/a,conj(pos)/poss}{nat}{}
+\tadOperacion{\#masCapturas}{as/a,conj(seg)/segs}{conj(seg)}{(\paratodo {s}{segs}) s $\in seguridad(a)$}
+\tadOperacion{\#maxCapturas}{as/a,conj(seg)/segs}{nat}{(\paratodo {s}{segs}) $\in seguridad(a)$}
 
 \tadAxiomas[]
 
@@ -172,7 +178,11 @@
 \tadAxioma{moverSeg(a,seg,nPos)}{\IF $(distMan(campus(a),\pi_2(seg),nPos) \ge 2$ \\$ \lor \neg(posValida(campus(a),nPos)))$ THEN
 									$seg$
 								 ELSE
-									$<\pi_1(seg),nPos>$
+									{\IF $\#sanciones(a,seg)<3$ THEN 
+										$<\pi_1(seg),nPos>$
+									 ELSE 
+										$seg$
+									FI}
 								 FI}
 \tadAxioma{proximasPosiciones(hscerca, posSeg)}{\IF $\emptyset?(hscerca)$  THEN 
 														$\emptyset$ 
@@ -221,6 +231,58 @@
 												FI}
 \tadAxioma{hippiesMasCerca(a,seg)}{$minDistsPos(campus(a),\pi_2(seg),posHippies(a))$}
 
+
+\tadAxioma{\#hippies(a)}{$contarHippies(a,conjPos(campus(a),0,0))$}
+\tadAxioma{\#estudiantes(a)}{$contarEstudiantes(a,conjPos(campus(a),0,0))$}
+\tadAxioma{contarHippies(a,poss)}{\IF $\neg(\emptyset?(poss))$ THEN 
+									{\IF $posValida(campus(a),dameUno(poss))$ THEN 
+										{\IF $hayHippie(a,dameUno(poss))$ THEN 
+											$1 + contarHippies(a,sinUno(poss))$
+										ELSE
+											$contarHippies(a,sinUno(poss))$
+										FI}
+									ELSE 
+										$contarHippies(a,sinUno(poss))$
+									FI} 
+								  ELSE 
+									$0$ 
+								  FI}
+
+\tadAxioma{contarEstudiantes(a,poss)}{\IF $\neg(\emptyset?(poss))$ THEN 
+									{\IF $posValida(campus(a),dameUno(poss))$ THEN 
+										{\IF $hayEst?(a,dameUno(poss))$ THEN 
+											$1 + contarEstudiantes(a,sinUno(poss))$
+										ELSE
+											$contarEstudiantes(a,sinUno(poss))$
+										FI}
+									ELSE 
+										$contarEstudiantes(a,sinUno(poss))$
+									FI} 
+								  ELSE 
+									$0$ 
+								  FI}
+								  
+\tadAxioma{masVigilante(a)}{$dameUno(masCapturas(a,seguridad(a)))$}
+\tadAxioma{masCapturas(a,segs)}{\IF $\neg(\emptyset?(segs))$ THEN	
+									{\IF $\#capturas(a,dameUno(segs))$$\ge$$maxCapturas(a,segs)$ 
+									THEN 
+										$ag(masCapturas(a,sinUno(segs)), dameUno(segs))$ 
+									ELSE 
+										$masCapturas(a,sinUno(segs))$ 
+									FI}
+								ELSE
+									$\emptyset$
+								FI}
+\tadAxioma{maxCapturas(a,segs)}{\IF $\emptyset?(segs)$ THEN 
+									$0$ 
+								ELSE
+									{\IF $\#capturas(a,dameUno(segs))$ $\ge$ \\ $maxCapturas(a,sinUno(segs))$ \\THEN
+										$\#capturas(a,dameUno(segs))$
+									ELSE 
+										$maxCapturas(a,sinUno(segs))$
+									FI}
+								FI}
+
 \end{tad}
 
 
@@ -249,7 +311,8 @@
 \tadOperacion{minDistsPos}{campus/c,pos/p,conj(pos)/posiciones}{conj(pos)}{$\neg(\emptyset?(posiciones))$}
 \tadOperacion{minDist}{campus/c,pos/p,conj(posiciones)/posiciones}{nat}{$\neg(\emptyset?(posiciones))$}
 \tadOperacion{distMan}{campus/c,pos/p1,pos/p2}{nat}{}
-\tadOperacion{abs}{nat,nat}{nat}{}
+\tadOperacion{restaAbs}{nat,nat}{nat}{}
+\tadOperacion{conjPos}{campus,nat,nat}{conj(pos)}{}
 
 \tadAxiomas[\paratodo{nat}{alto}, \paratodo{nat}{ancho}, \paratodo{conj (pos)}{obst}
 \\\paratodo{pos}{p _1} \paratodo {pos}{p _2}]
@@ -285,6 +348,14 @@
 \tadAxioma{distMan(c,$p_1$,$p_2$)}{$restaAbs(\pi_2(p_1),\pi_2(p_2))$+$restaAbs(\pi_1(p_1),\pi_1(p_2))$}
 
 \tadAxioma{restaAbs(n1,n2)}{\IF $n2 > n1$ THEN $n2-n1$ ELSE $n1-n2$ FI}
+\tadAxioma{conjPos(c,x,y)}{\IF $x \ge ancho(c)$ THEN $\emptyset$ ELSE
+								{\IF $y \ge alto(c)$ THEN
+									$conjPos(c,x+1,0)$
+								ELSE
+									$ag(conjPos(c,x,y+1), <x,y>)$
+								FI}
+							FI}
+
 \end{tad}
 
 
