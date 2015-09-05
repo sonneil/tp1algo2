@@ -140,7 +140,7 @@
 
 \tadAxioma{\#capturas(nueva($a,segs$),$s$)}{$0$}
 \tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{$\#capturas(a,s)$}
-\tadAxioma{\#capturas(nuevoHippie($a,p_1$),$s$)}{\IF $(adyacente(a,p_1,posSeg(a,s))$ THEN $1 + \#capturas(a,s)$ ELSE $\#capturas(a,s)$ FI}
+\tadAxioma{\#capturas(nuevoHippie($a,p_1$),$s$)}{\IF $(adyacente(a,p_1,posSeg(a,s)) \land encerrado(a,p_1))$ THEN $1 + \#capturas(a,s)$ ELSE $\#capturas(a,s)$ FI}
 \tadAxioma{\#capturas(nuevoEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 \tadAxioma{\#capturas(sacarEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 \tadAxioma{\#capturas($a$,moverSeg($a,s,p_1$))}{$
