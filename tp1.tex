@@ -109,6 +109,7 @@
 \tadOperacion{contarEstudiantes}{as/a,conj(pos)/poss}{nat}{}
 \tadOperacion{\#masCapturas}{as/a,conj(seg)/segs}{conj(seg)}{(\paratodo {s}{segs}) s $\in seguridad(a)$}
 \tadOperacion{\#maxCapturas}{as/a,conj(seg)/segs}{nat}{(\paratodo {s}{segs}) $\in seguridad(a)$}
+\tadOperacion{captura?}{as/a,pos/p}{bool}{}
 
 \tadAxiomas[]
 
@@ -148,6 +149,30 @@
 \beta(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayHippie?(a,<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)-1,\pi_2(p_1)>))) + \\
 \beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + \\
 \beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)-1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)-1>))) + \#capturas(a,s)$}
+
+
+
+\tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{
+
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    +\\
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    +\\
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    +\\
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    + $\#capturas(a,s)$
+}
+
+
 
 
 \tadAxioma{\#sanciones(nueva($a,segs$),$s$)}{$0$}
@@ -298,6 +323,37 @@
 										$maxCapturas(a,sinUno(segs))$
 									FI}
 								FI}
+
+\tadAxioma{captura?($a,p$)}{
+
+{\IF $(posValida(campus(a),<\pi_1(p)+1,\pi_2(p)>)$ THEN
+$(hayObstaculo?(campus(a),<\pi_1(p)+1,\pi_2(p)>) \lor haySeg?(a,<\pi_1(p)+1,\pi_2(p)>))$ ELSE
+$\neg(hayEst?(a,<\pi_1(p),\pi_2(p)>))$
+FI}
+
+\land
+
+{\IF $(posValida(campus(a),<\pi_1(p)-1,\pi_2(p)>)$ THEN
+$(hayObstaculo?(campus(a),<\pi_1(p)-1,\pi_2(p)>) \lor haySeg?(a,<\pi_1(p)-1,\pi_2(p)>))$ ELSE
+$\neg(hayEst?(a,<\pi_1(p),\pi_2(p)>))$
+FI}
+
+\land
+
+{\IF $(posValida(campus(a),<\pi_1(p),\pi_2(p)+1>)$ THEN
+$(hayObstaculo?(campus(a),<\pi_1(p),\pi_2(p)+1>) \lor haySeg?(a,<\pi_1(p),\pi_2(p)+1>))$ ELSE
+$True$
+FI}
+
+\land
+
+{\IF $(posValida(campus(a),<\pi_1(p),\pi_2(p)-1>)$ THEN
+$(hayObstaculo?(campus(a),<\pi_1(p),\pi_2(p)-1>) \lor haySeg?(a,<\pi_1(p),\pi_2(p)-1>))$ ELSE
+$True$
+FI}
+
+}
+
 
 \end{tad}
 
