@@ -155,19 +155,31 @@
 \tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{
 
     {\IF $(PosValida(campus(a),<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
+    {\IF $(hayHippie(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
     {\IF $(captura?(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
     ELSE $0$ FI}\\
+    
     +\\
+    
     {\IF $(PosValida(campus(a),<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
+    {\IF $(hayHippie(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
     {\IF $(captura?(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
     ELSE $0$ FI}\\
     +\\
+    
     {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
+    {\IF $(hayHippie(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
     {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
     ELSE $0$ FI}\\
     +\\
+    
     {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
+    {\IF $(hayHippie(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
     {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
     ELSE $0$ FI}\\
     + $\#capturas(a,s)$
 }
