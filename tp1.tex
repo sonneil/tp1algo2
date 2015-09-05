@@ -122,9 +122,9 @@
 \tadAxioma{campus(sacarEst($a,p_1$))}{$campus(a)$}
 \tadAxioma{seguridad(nueva($c,segs$))}{$segs$}
 \tadAxioma{seguridad(moverEst($a,p_1,p_2$))}{$moverTodos(a, seguridad(a))$}
-\tadAxioma{seguridad(nuevoEst($a,p_1$))}{$a, campus(a)$}
-\tadAxioma{seguridad(nuevoHippie($a,p_1$))}{$campus(a)$}
-\tadAxioma{seguridad(sacarEst($a,p_1$))}{$campus(a)$}
+\tadAxioma{seguridad(nuevoEst($a,p_1$))}{$moverTodos(a, seguridad(a))$}
+\tadAxioma{seguridad(nuevoHippie($a,p_1$))}{$seguridad(a)$}
+\tadAxioma{seguridad(sacarEst($a,p_1$))}{$seguridad(a)$}
 \tadAxioma{hayEst?(nueva($c,segs$),$p$)}{$False$}
 \tadAxioma{hayEst?(nuevoEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI}
 \tadAxioma{hayEst?(moverEst($a,p_1,p_2$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE {\IF $p_2=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI} FI}
@@ -140,14 +140,14 @@
 
 \tadAxioma{\#capturas(nueva($a,segs$),$s$)}{$0$}
 \tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{$\#capturas(a,s)$}
-\tadAxioma{\#capturas(nuevoHippie($a,p_1$),$s$)}{\IF $(adyacente(a,p_1,posSeg(a,s))$ THEN $1 + \#capturas(a,s)$ ELSE $\#capturas(a,s)$ FI}
+\tadAxioma{\#capturas(nuevoHippie($a,p_1$),$s$)}{\IF $(adyacente(a,p_1,posSeg(a,s)) \land encerrado(a,p_1))$ THEN $1 + \#capturas(a,s)$ ELSE $\#capturas(a,s)$ FI}
 \tadAxioma{\#capturas(nuevoEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 \tadAxioma{\#capturas(sacarEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 \tadAxioma{\#capturas($a$,moverSeg($a,s,p_1$))}{$
-\beta(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayHippie?(a,<\pi_1(p_1)+1,\pi_2(p_1)>)) + 
-\beta(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayHippie?(a,<\pi_1(p_1)-1,\pi_2(p_1)>)) + 
-\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)+1>)) + 
-\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)-1>)) + \#capturas(a,s)$}
+\beta(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayHippie?(a,<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)+1,\pi_2(p_1)>))) + \\
+\beta(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayHippie?(a,<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)-1,\pi_2(p_1)>))) + \\
+\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + \\
+\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)-1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)-1>))) + \#capturas(a,s)$}
 
 
 \tadAxioma{\#sanciones(nueva($a,segs$),$s$)}{$0$}
@@ -156,9 +156,9 @@
 \tadAxioma{\#sanciones(nuevoEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones(sacarEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones($a$,moverSeg($a,s,p_1$))}{$
-\beta(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayEst?(a,<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)+1,\pi_2(p_1)>))) + 
-\beta(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayEst?(a,<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)-1,\pi_2(p_1)>))) + 
-\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayEst?(a,<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + 
+\beta(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayEst?(a,<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)+1,\pi_2(p_1)>))) + \\
+\beta(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayEst?(a,<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)-1,\pi_2(p_1)>))) + \\
+\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayEst?(a,<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + \\
 \beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayEst?(a,<\pi_1(p_1),\pi_2(p_1)-1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)-1>))) + \#sanciones(a,s)$}
 
 
@@ -170,11 +170,27 @@
 								   {\IF $(hayHippies?(a))$ THEN 
 										$Ag(moverTodos(a, sinUno(segs)), $
 										\\$moverSeg(a,dameUno(segs),$
-										\\$dameUno(proxPosiciones$\\ $ $ $(hippiesMasCerca(a,dameUno(segs))))))$ 
+										\\$dameUno(proxPosiciones$\\ $(hippiesMasCerca(a,dameUno(segs))))))$ 
 								    ELSE 
-										$segs$ 
+										$moverIngreso(a,segs)$ 
 									FI} 
 							   FI}
+
+\tadAxioma{moverIngreso(a,segs)}{\IF $\emptyset?(segs)$ THEN
+									$\emptyset$
+								ELSE
+									{\IF $(alto(campus(a))-1)-\pi_2(dameUno(segs)) > \pi_2(dameUno(segs))$ THEN
+										$ag(moverIngreso(a,sinUno(segs)), mover(dameUno(segs), <(\pi_1(dameUno(segs)),\pi_2(segs)-1)>))$
+									ELSE
+										{\IF $(alto(campus(a))-1)-\pi_2(dameUno(segs)) < \pi_2(dameUno(segs))$ THEN 
+											$ag(moverIngreso(a,sinUno(segs)), mover(dameUno(segs), <(\pi_1(dameUno(segs)),\pi_2(segs)+1)>))$
+										ELSE
+											$ag(moverIngreso(a,sinUno(segs)), mover(dameUno(segs), $\\
+											$dameUno(\{<(\pi_1(dameUno(segs)),\pi_2(segs)-1)>, <(\pi_1(dameUno(segs)),\pi_2(segs)+1)>)\}))$
+										FI}
+									FI}
+								FI}
+							   
 \tadAxioma{moverSeg(a,seg,nPos)}{\IF $(distMan(campus(a),\pi_2(seg),nPos) \ge 2$ \\$ \lor \neg(posValida(campus(a),nPos)))$ THEN
 									$seg$
 								 ELSE
