@@ -110,6 +110,8 @@
 \tadOperacion{\#masCapturas}{as/a,conj(seg)/segs}{conj(seg)}{(\paratodo {s}{segs}) s $\in seguridad(a)$}
 \tadOperacion{\#maxCapturas}{as/a,conj(seg)/segs}{nat}{(\paratodo {s}{segs}) $\in seguridad(a)$}
 \tadOperacion{captura?}{as/a,pos/p}{bool}{posValida(campus(as),p)}
+\tadOperacion{hippieNatural}{as/a,pos/p}{nat}{posValida(campus(as),p)}
+\tadOperacion{hippiesCercanos}{as/a,pos/p}{nat}{posValida(campus(as),p)}
 
 \tadAxiomas[]
 
@@ -128,7 +130,7 @@
 \tadAxioma{seguridad(sacarEst($a,p_1$))}{$seguridad(a)$}
 \tadAxioma{hayEst?(nueva($c,segs$),$p$)}{$False$}
 \tadAxioma{hayEst?(nuevoEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI}
-\tadAxioma{hayEst?(moverEst($a,p_1,p_2$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE {\IF $p_2=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI} FI}
+\tadAxioma{hayEst?(moverEst($a,p_1,p_2$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE {\IF $p_2=p$ THEN  $\neg (hippiesCercanos(a,p2)\geq 2$ ) ELSE $hayEst?(a,p)$ FI} FI}
 \tadAxioma{hayEst?(nuevoHippie($a,p_1$),$p$)}{$hayEst?(a,p)$}
 \tadAxioma{hayEst?(sacarEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE $hayEst?(a,p)$ FI}
 \tadAxioma{hayHippie?(nueva($c,segs$),$p$)}{$False$}
@@ -365,7 +367,8 @@
 										$maxCapturas(a,sinUno(segs))$
 									FI}
 								FI}
-
+\tadAxioma{hippieNatural($a,p$)}{\IF hayHippie?(a,p) THEN 1 ELSE 0 FI}
+\tadAxioma{hippiesCercanos($a,p$)}{{\IF posValida(a,<$\pi_1(p)+1,\pi_2(p)$>) THEN hippieNatural((a,<$\pi_1(p)+1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida(a,<$\pi_1(p)-1,\pi_2(p)$>) THEN hippieNatural((a,<$\pi_1(p)-1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida(a,<$\pi_1(p),\pi_2(p)+1$>) THEN hippieNatural((a,<$\pi_1(p),\pi_2(p)+1$>) ELSE 0 FI}+{\IF posValida(a,<$\pi_1(p),\pi_2(p)-1$>) THEN hippieNatural((a,<$\pi_1(p),\pi_2(p)-1$>) ELSE 0 FI}}
 \tadAxioma{captura?($a,p$)}{
 
 {\IF $(posValida(campus(a),<\pi_1(p)+1,\pi_2(p)>)$ THEN
@@ -395,7 +398,6 @@ $True$
 FI}
 
 }
-
 
 \end{tad}
 
