@@ -70,11 +70,11 @@
 \begin{tad}{\tadNombre{AS}}
 \tadGeneros{as}
 
-\tadIgualdadObservacional{facu}{facu'}{as}{$campus(facu)=campus(facu') \land seguridad(facu)= seguridad (facu') $}
+\tadIgualdadObservacional{facu}{facu'}{as}{campus(facu)=campus(facu')  \\$\land$ seguridad(facu)=seguridad(facu') \\$\land$ (\paratodo{p}{pos})(posValida(campus(facu),p)) hayEst?(facu,p)$\iff$hayEst?(facu',p) $\land$ (\paratodo{p}{pos})(posValida(campus(facu),p)) hayHippie?(facu,p)$\iff$hayHippie?(facu',p) $\land$ (\paratodo{s}{seg})(s$\in$seguridad(a))\\ (\#capturas(facu,s)=\#capturas(facu',s) \\$\land$ \#sanciones(facu,s)=\#sanciones(facu',s))}
 
-\tadUsa{\tadNombre{campus}}
+\tadUsa{\tadNombre{campus},\tadNombre{bool},\tadNombre{nat},\tadNombre{tupla},\tadNombre{seg}}
 
-\tadExporta{\tadNombre{}}
+\tadExporta{\tadNombre{as},generadores, observadores,\#hippies,\#estudiantes,\#masVigilante }
 
 \tadObservadores
 \tadOperacion{campus}{as}{campus}{}
@@ -374,9 +374,9 @@ FI}
 \begin{tad}{\tadNombre{campus}}
 \tadGeneros{campus}
 
-\tadUsa{\tadNombre{campus}}
+\tadUsa{\tadNombre{bool},\tadNombre{nat},\tadNombre{tupla}}
 
-\tadExporta{\tadNombre{}}
+\tadExporta{\tadNombre{campus}, observadores, generadores, posValida, posIngreso,minDistPos,adyacente,}
 
 \tadObservadores
 \tadOperacion{alto}{campus}{nat}{}
