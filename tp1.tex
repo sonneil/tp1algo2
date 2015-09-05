@@ -94,14 +94,14 @@
 
 \tadOtrasOperaciones
 
-\tadOperacion{haySeg?}{as/a,pos/p}{bool}{}
-\tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{}
-\tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
+\tadOperacion{haySeg?}{as/a,pos/p}{bool}{posValida(campus(as),p)}
+\tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{posValida(campus(as),p)}
+\tadOperacion{posIngreso}{as/a,pos/p}{bool}{posValida(campus(as),p)}
 \tadOperacion{moverTodos}{as/a,conj(seguridad)/segs}{conj(seguridad)}{}
 \tadOperacion{moverSeg}{as/a,seguridad/seg,pos/posSig}{seguridad}{}
 \tadOperacion{proximasPosiciones}{as/a,conj(pos)/minPos,pos/posAct}{conj(pos)}{$\neg(emptyset?(minPos)) \yluego posValida(campus(a),posAct) \land posicionesValidas(campus(a),minPos)$}
 \tadOperacion{hippiesMasCerca}{as/a,seguridad/seg}{conj(pos)}{$seg \in seguridad(a) \land hayHippies(a)$}
-\tadOperacion{encerrado}{as/a,pos/p}{bool}{hayEst?(p)}
+\tadOperacion{encerrado}{as/a,pos/p}{bool}{$posValida(campus(as),p) \land hayEst?(p)$}
 \tadOperacion{\#hippies}{as/a}{nat}{}
 \tadOperacion{\#estudiantes}{as/a}{nat}{}
 \tadOperacion{\#masVigilante}{as/a}{nat}{}
@@ -109,7 +109,7 @@
 \tadOperacion{contarEstudiantes}{as/a,conj(pos)/poss}{nat}{}
 \tadOperacion{\#masCapturas}{as/a,conj(seg)/segs}{conj(seg)}{(\paratodo {s}{segs}) s $\in seguridad(a)$}
 \tadOperacion{\#maxCapturas}{as/a,conj(seg)/segs}{nat}{(\paratodo {s}{segs}) $\in seguridad(a)$}
-\tadOperacion{captura?}{as/a,pos/p}{bool}{}
+\tadOperacion{captura?}{as/a,pos/p}{bool}{posValida(campus(as),p)}
 
 \tadAxiomas[]
 
@@ -198,7 +198,37 @@
 \beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayEst?(a,<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + \\
 \beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayEst?(a,<\pi_1(p_1),\pi_2(p_1)-1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)-1>))) + \#sanciones(a,s)$}
 
+\tadAxioma{\#sanciones(moverEst($a,p_1,p_2$),$s$)}{
 
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
+    {\IF $(hayEst(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    
+    +\\
+    
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
+    {\IF $(hayEst(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    +\\
+    
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
+    {\IF $(hayEst(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    +\\
+    
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
+    {\IF $(hayEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    + $\#sanciones(a,s)$
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Axiomas otras operaciones%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \tadAxioma{moverTodos(a,segs)}{\IF $(\emptyset?(segs))$ THEN 
@@ -389,12 +419,12 @@ FI}
 
 \tadOtrasOperaciones
 
-\tadOperacion{adyacente}{as/a,pos/pe,pos/pd}{bool}{$posValida(c,pe) \land posValida(c,pd)$}
-\tadOperacion{posValida}{as/a,pos/p}{bool}{}
-\tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
-\tadOperacion{minDistsPos}{campus/c,pos/p,conj(pos)/posiciones}{conj(pos)}{$\neg(\emptyset?(posiciones))$}
-\tadOperacion{minDist}{campus/c,pos/p,conj(posiciones)/posiciones}{nat}{$\neg(\emptyset?(posiciones))$}
-\tadOperacion{distMan}{campus/c,pos/p1,pos/p2}{nat}{}
+\tadOperacion{adyacente}{campus/c,pos/pe,pos/pd}{bool}{$posValida(c,pe) \land posValida(c,pd)$}
+\tadOperacion{posValida}{campus/c,pos/p}{bool}{posValida(c,p)}
+\tadOperacion{posIngreso}{campus/c,pos/p}{bool}{posValida(c,p)}
+\tadOperacion{minDistsPos}{campus/c,pos/p,conj(pos)/posiciones}{conj(pos)}{$posValida(c,p) \land \neg(\emptyset?(posiciones))$}
+\tadOperacion{minDist}{campus/c,pos/p,conj(posiciones)/posiciones}{nat}{$posValida(c,p) \land \neg(\emptyset?(posiciones))$}
+\tadOperacion{distMan}{campus/c,pos/p1,pos/p2}{nat}{$posValida(c,p1) \land posValida(c,p2)$}
 \tadOperacion{restaAbs}{nat,nat}{nat}{}
 \tadOperacion{conjPos}{campus,nat,nat}{conj(pos)}{}
 
@@ -410,7 +440,6 @@ FI}
 \tadAxioma{obstaculos(nuevo($ancho$,$alto$,$obst$))}{$obst$}
 \tadAxioma{posValida(nuevo($ancho$,$alto$,$obst$),$p_1$)}{$\pi_1(p_1)<ancho \land \pi_2(p_1)<alto$}
 \tadAxioma{adyacente(nuevo($ancho$,$alto$,$obst$),$p _1$,$p _2$)}{$(\pi_1(p_1)=\pi_1(p_2)-1 \lor\pi_1(p_1)=\pi_1(p_2)+1)\land (\pi_2(p_1)=\pi_2(p_2)-1 \lor\pi_2(p_1)=\pi_2(p_2)+1)$}
-\tadAxioma{posValida(nuevo($ancho$,$alto$,$obst$),$p_1$)}{$\pi_2(p_1)=alto-1 \lor \pi_2(p_1)=0$}
 \tadAxioma{minDistsPos(c,p,posiciones)}{\IF $\emptyset?(sinUno(posiciones))$ THEN
 											$dameUno(posiciones)$
 									   ELSE
