@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.3)  5 SEP 2015 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.3)  5 SEP 2015 18:05
 entering extended mode
 **tp1.tex
 (tp1.tex
@@ -562,6 +562,36 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 69.
 
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]$\OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 facu\OT1/cmr/m/n/10
+ ) = \OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 facu[]\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]$\OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 facu\OT1/cmr/m/n/10
+ ) = \OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 facu[]\OT1/cmr/m/
+n/10 ) \OMS/cmsy/m/n/10 ^$
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 73--73
+[]$\OML/cmm/m/it/7 campus\OT1/cmr/m/n/7 (\OML/cmm/m/it/7 facu\OT1/cmr/m/n/7 ) =
+ \OML/cmm/m/it/7 campus\OT1/cmr/m/n/7 (\OML/cmm/m/it/7 facu[]\OT1/cmr/m/n/7 ) \
+OMS/cmsy/m/n/7 ^ \OML/cmm/m/it/7 seguridad\OT1/cmr/m/n/7 (\OML/cmm/m/it/7 facu\
+OT1/cmr/m/n/7 ) =$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]$\OML/cmm/m/it/5 campus\OT1/cmr/m/n/5 (\OML/cmm/m/it/5 facu\OT1/cmr/m/n/5 ) =
+ \OML/cmm/m/it/5 campus\OT1/cmr/m/n/5 (\OML/cmm/m/it/5 facu[]\OT1/cmr/m/n/5 ) \
+OMS/cmsy/m/n/5 ^ \OML/cmm/m/it/5 seguridad\OT1/cmr/m/n/5 (\OML/cmm/m/it/5 facu\
+OT1/cmr/m/n/5 ) =$
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 90--90
 []$\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 campus\OT1/cmr/m
 /n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; pe\OT1/cmr/m/n/10 
@@ -604,31 +634,31 @@ s\OT1/cmr/m/n/10 )$
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 119.
 [3]
-Underfull \hbox (badness 3407) in paragraph at lines 150--150
+Underfull \hbox (badness 3407) in paragraph at lines 151--151
 []$\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\O
 ML/cmm/m/it/10 ; < []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 ) + 
@@ -637,7 +667,7 @@ OML/cmm/m/it/10 >\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^[]$
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 150--150
+Underfull \hbox (badness 3407) in paragraph at lines 151--151
 $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML
 /cmm/m/it/10 ; < []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 ) \OMS
@@ -647,7 +677,7 @@ $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10 (
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 150--150
+Underfull \hbox (badness 3407) in paragraph at lines 151--151
 $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML
 /cmm/m/it/10 ; < []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 )\OML/
@@ -656,7 +686,7 @@ L/cmm/m/it/10 >\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^[]$
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 150--150
+Underfull \hbox (badness 3407) in paragraph at lines 151--151
 $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML
 /cmm/m/it/10 ; < []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 )\OML/
@@ -665,53 +695,101 @@ sy/m/n/10   \OT1/cmr/m/n/10 1 \OML/cmm/m/it/10 >\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n
 /10 ^[]$
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+
+ []
+
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 190.
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Overfull \vbox (123.92566pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 190.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 190.
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 []\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 cercanos\OT1/cmr/m/n/10
  ?(\OML/cmm/m/it/10 a; p[]; posSeg\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; s\OT1/cm
 r/m/n/10 )) \OMS/cmsy/m/n/10 ^[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 hayEst\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 cas
 illeroEnComun\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; p[]; posSeg\OT1/cmr/m/n/10 (\
 OML/cmm/m/it/10 a; s\OT1/cmr/m/n/10 ))) \OMS/cmsy/m/n/10 ^$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 $\OML/cmm/m/it/10 encerrado\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 casilleroEnComun\O
 T1/cmr/m/n/10 (\OML/cmm/m/it/10 a; p[]; posSeg\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
  a; s\OT1/cmr/m/n/10 )))))$
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 162--162
+Underfull \hbox (badness 3407) in paragraph at lines 199--199
 []$\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\O
 ML/cmm/m/it/10 ; < []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 ) + 
@@ -720,7 +798,7 @@ OML/cmm/m/it/10 >\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^[]$
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 162--162
+Underfull \hbox (badness 3407) in paragraph at lines 199--199
 $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML
 /cmm/m/it/10 ; < []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 ) \OMS
@@ -730,7 +808,7 @@ $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10 (
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 162--162
+Underfull \hbox (badness 3407) in paragraph at lines 199--199
 $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML
 /cmm/m/it/10 ; < []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 )\OML/
@@ -739,7 +817,7 @@ L/cmm/m/it/10 >\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^[]$
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 162--162
+Underfull \hbox (badness 3407) in paragraph at lines 199--199
 $\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posValida\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML
 /cmm/m/it/10 ; < []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 )\OML/
@@ -749,7 +827,7 @@ sy/m/n/10   \OT1/cmr/m/n/10 1 \OML/cmm/m/it/10 >\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n
  []
 
 
-Overfull \hbox (33.57797pt too wide) in paragraph at lines 192--192
+Overfull \hbox (33.57797pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -757,7 +835,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <$
  []
 
 
-Overfull \hbox (24.13354pt too wide) in paragraph at lines 192--192
+Overfull \hbox (24.13354pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -765,7 +843,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
  []
 
 
-Overfull \hbox (33.57797pt too wide) in paragraph at lines 192--192
+Overfull \hbox (33.57797pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -773,7 +851,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <$
  []
 
 
-Overfull \hbox (47.80434pt too wide) in paragraph at lines 192--192
+Overfull \hbox (47.80434pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -781,7 +859,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <$
  []
 
 
-Overfull \hbox (38.35991pt too wide) in paragraph at lines 192--192
+Overfull \hbox (38.35991pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -789,7 +867,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 192--192
+Underfull \hbox (badness 1515) in paragraph at lines 229--229
 []\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 alto\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )) \OMS
 /cmsy/m/n/10   \OT1/cmr/m/n/10 1) \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 []\OT1/c
@@ -798,7 +876,7 @@ mr/m/n/10 )) \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (47.80434pt too wide) in paragraph at lines 192--192
+Overfull \hbox (47.80434pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -806,7 +884,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <$
  []
 
 
-Overfull \hbox (38.35991pt too wide) in paragraph at lines 192--192
+Overfull \hbox (38.35991pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -814,7 +892,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
  []
 
 
-Overfull \hbox (47.80434pt too wide) in paragraph at lines 192--192
+Overfull \hbox (47.80434pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -822,7 +900,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <$
  []
 
 
-Overfull \hbox (62.0307pt too wide) in paragraph at lines 192--192
+Overfull \hbox (62.0307pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -830,7 +908,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <$
  []
 
 
-Overfull \hbox (52.58627pt too wide) in paragraph at lines 192--192
+Overfull \hbox (52.58627pt too wide) in paragraph at lines 229--229
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -838,7 +916,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 192--192
+Underfull \hbox (badness 1515) in paragraph at lines 229--229
 []\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 alto\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )) \OMS
 /cmsy/m/n/10   \OT1/cmr/m/n/10 1) \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 []\OT1/c
@@ -847,76 +925,76 @@ mr/m/n/10 )) \OML/cmm/m/it/10 >$
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 284.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 247.
-[5]
-Overfull \hbox (14.35382pt too wide) in paragraph at lines 247--247
+(babel)             in language  on input line 284.
+[6]
+Overfull \hbox (14.35382pt too wide) in paragraph at lines 284--284
 $\OMS/cmsy/m/n/10 [$ $\OML/cmm/m/it/10 proxPosiciones\OT1/cmr/m/n/10 (\OML/cmm/
 m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 minPos\OT1/cmr/m/n/10 )\OML/cmm
 /m/it/10 ; posSeg\OT1/cmr/m/n/10 )$ 
  []
 
 
-Overfull \hbox (14.35382pt too wide) in paragraph at lines 247--247
+Overfull \hbox (14.35382pt too wide) in paragraph at lines 284--284
 $\OMS/cmsy/m/n/10 [$ $\OML/cmm/m/it/10 proxPosiciones\OT1/cmr/m/n/10 (\OML/cmm/
 m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 minPos\OT1/cmr/m/n/10 )\OML/cmm
 /m/it/10 ; posSeg\OT1/cmr/m/n/10 )$ 
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 247--247
+Underfull \hbox (badness 2698) in paragraph at lines 284--284
 []\T1/cmr/bx/n/10 if $\OML/cmm/m/it/10 []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dam
 eUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 hscerca\OT1/cmr/m/n/10 )) \OML/cmm/m/it/1
 0 < []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 )$
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 279.
-[6]
-Overfull \hbox (4.76399pt too wide) in paragraph at lines 291--291
+(babel)             in language  on input line 316.
+[7]
+Overfull \hbox (4.76399pt too wide) in paragraph at lines 328--328
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 masCapturas\OT1/cmr/m/n
 /10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m
 /n/10 ))\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cm
@@ -924,94 +1002,94 @@ r/m/n/10 ))$
  []
 
 
-Overfull \hbox (10.62924pt too wide) in paragraph at lines 291--291
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
 []\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 #\OML/cmm/m/it/10 capturas\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 a; dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n
-/10 ))$$\OMS/cmsy/m/n/10 $$\OML/cmm/m/it/10 maxCapturas\OT1/cmr/m/n/10 (\OML/c
-mm/m/it/10 a; segs\OT1/cmr/m/n/10 )$
+/10 ))$ $\OMS/cmsy/m/n/10 $
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
+[8]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 373.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 314.
-[7]
-Overfull \hbox (10.90703pt too wide) in paragraph at lines 354--354
+(babel)             in language  on input line 373.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 398.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 398.
+ [9]
+Overfull \hbox (10.90703pt too wide) in paragraph at lines 422--422
 []$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 minDistsPos\OT1/cmr/m/n
 /10 (\OML/cmm/m/it/10 c; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posiciones\OT1
 /cmr/m/n/10 ))\OML/cmm/m/it/10 ;$ 
  []
 
 
-Overfull \hbox (10.5285pt too wide) in paragraph at lines 354--354
+Overfull \hbox (10.5285pt too wide) in paragraph at lines 422--422
 []$\OML/cmm/m/it/10 minDistsPos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c; seg; sinUno
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posiciones\OT1/cmr/m/n/10 ))$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 431--431
 $\OML/cmm/m/it/10 minDist\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c; pos=p; sinUno\OT1
 /cmr/m/n/10 (\OML/cmm/m/it/10 posiciones\OT1/cmr/m/n/10 ))$
  []
 
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 364.
-[8]
-Overfull \hbox (20.55751pt too wide) in paragraph at lines 364--364
+
+Overfull \hbox (20.55751pt too wide) in paragraph at lines 432--432
 []$\OML/cmm/m/it/10 restaAbs\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 []\OT1/cmr/m/n/1
 0 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 (
 \OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 ))$\T1/cmr/m/n/10 +$\OML/cmm/m/it/10 restaA
@@ -1023,62 +1101,62 @@ mr/m/n/10 ))$
 
 AED: lastpage setting LastPage
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 378.
-[9]
+(babel)             in language  on input line 446.
+[10]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 378.
+(babel)             in language  on input line 446.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 378.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
+(babel)             in language  on input line 446.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
  (tp1.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 446.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 446.
 Package rerunfilecheck Info: File `tp1.out' has not changed.
 (rerunfilecheck)             Checksum: 7B7B2C658BE8785D2B46DFED8D80C09C;88.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 446.
  ) 
 Here is how much of TeX's memory you used:
- 7967 strings out of 493698
- 111469 string characters out of 3144428
- 228771 words of memory out of 3000000
+ 7968 strings out of 493698
+ 111476 string characters out of 3144428
+ 231775 words of memory out of 3000000
  11147 multiletter control sequences out of 15000+200000
  16598 words of font info for 45 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 35i,16n,67p,281b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,16n,67p,310b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTe
@@ -1095,9 +1173,9 @@ type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/cm-super/sfrm1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-su
 per/sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1
 000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc1440.pfb>
-Output written on tp1.pdf (9 pages, 252776 bytes).
+Output written on tp1.pdf (10 pages, 255788 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

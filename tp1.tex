@@ -70,7 +70,7 @@
 \begin{tad}{\tadNombre{AS}}
 \tadGeneros{as}
 
-\tadIgualdadObservacional{facu}{facu'}{as}{$campus(facu)=campus(facu') \land seguridad(facu)= seguridad (facu') \land \paratodo {p:pos}{}$}
+\tadIgualdadObservacional{facu}{facu'}{as}{$campus(facu)=campus(facu') \land seguridad(facu)= seguridad (facu') $}
 
 \tadUsa{\tadNombre{campus}}
 
@@ -317,7 +317,7 @@
 								  
 \tadAxioma{masVigilante(a)}{$dameUno(masCapturas(a,seguridad(a)))$}
 \tadAxioma{masCapturas(a,segs)}{\IF $\neg(\emptyset?(segs))$ THEN	
-									{\IF $\#capturas(a,dameUno(segs))$$\ge$$maxCapturas(a,segs)$ 
+									{\IF $\#capturas(a,dameUno(segs))$ $\ge$ $maxCapturas(a,segs)$ 
 									THEN 
 										$ag(masCapturas(a,sinUno(segs)), dameUno(segs))$ 
 									ELSE 
@@ -343,21 +343,21 @@ $(hayObstaculo?(campus(a),<\pi_1(p)+1,\pi_2(p)>) \lor haySeg?(a,<\pi_1(p)+1,\pi_
 $\neg(hayEst?(a,<\pi_1(p),\pi_2(p)>))$
 FI}
 
-\land
+$\land$
 
 {\IF $(posValida(campus(a),<\pi_1(p)-1,\pi_2(p)>)$ THEN
 $(hayObstaculo?(campus(a),<\pi_1(p)-1,\pi_2(p)>) \lor haySeg?(a,<\pi_1(p)-1,\pi_2(p)>))$ ELSE
 $\neg(hayEst?(a,<\pi_1(p),\pi_2(p)>))$
 FI}
 
-\land
+$\land$
 
 {\IF $(posValida(campus(a),<\pi_1(p),\pi_2(p)+1>)$ THEN
 $(hayObstaculo?(campus(a),<\pi_1(p),\pi_2(p)+1>) \lor haySeg?(a,<\pi_1(p),\pi_2(p)+1>))$ ELSE
 $True$
 FI}
 
-\land
+$\land$
 
 {\IF $(posValida(campus(a),<\pi_1(p),\pi_2(p)-1>)$ THEN
 $(hayObstaculo?(campus(a),<\pi_1(p),\pi_2(p)-1>) \lor haySeg?(a,<\pi_1(p),\pi_2(p)-1>))$ ELSE
