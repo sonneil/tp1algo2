@@ -343,21 +343,21 @@ $(hayObstaculo?(campus(a),<\pi_1(p)+1,\pi_2(p)>) \lor haySeg?(a,<\pi_1(p)+1,\pi_
 $\neg(hayEst?(a,<\pi_1(p),\pi_2(p)>))$
 FI}
 
-\land
+$\land$
 
 {\IF $(posValida(campus(a),<\pi_1(p)-1,\pi_2(p)>)$ THEN
 $(hayObstaculo?(campus(a),<\pi_1(p)-1,\pi_2(p)>) \lor haySeg?(a,<\pi_1(p)-1,\pi_2(p)>))$ ELSE
 $\neg(hayEst?(a,<\pi_1(p),\pi_2(p)>))$
 FI}
 
-\land
+$\land$
 
 {\IF $(posValida(campus(a),<\pi_1(p),\pi_2(p)+1>)$ THEN
 $(hayObstaculo?(campus(a),<\pi_1(p),\pi_2(p)+1>) \lor haySeg?(a,<\pi_1(p),\pi_2(p)+1>))$ ELSE
 $True$
 FI}
 
-\land
+$\land$
 
 {\IF $(posValida(campus(a),<\pi_1(p),\pi_2(p)-1>)$ THEN
 $(hayObstaculo?(campus(a),<\pi_1(p),\pi_2(p)-1>) \lor haySeg?(a,<\pi_1(p),\pi_2(p)-1>))$ ELSE
