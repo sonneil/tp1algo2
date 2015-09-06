@@ -70,7 +70,7 @@
 \begin{tad}{\tadNombre{AS}}
 \tadGeneros{as}
 
-\tadIgualdadObservacional{dc}{dc'}{dcnet}{}
+\tadIgualdadObservacional{facu}{facu'}{as}{$campus(facu)=campus(facu') \land seguridad(facu)= seguridad (facu') $}
 
 \tadUsa{\tadNombre{campus}}
 
@@ -99,7 +99,12 @@
 \tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
 \tadOperacion{moverTodos}{as/a,conj(seguridad)/segs}{conj(seguridad)}{}
 \tadOperacion{moverSeg}{as/a,seguridad/seg,pos/posSig}{seguridad}{}
-\tadOperacion{proximasPosiciones}{as/a,conj(pos)/minPos,pos/posAct}{conj(pos)}{$\neg(emptyset?(minPos)) \yluego posValida(campus(a),posAct) \land posicionesValidas(campus(a),minPos)$}
+\tadOperacion{proxPoss}{as/a,conj(pos)/minPos,pos/posAct}{conj(pos)}{$\neg(emptyset?(minPos)) \yluego posValida(campus(a),posAct) \land posicionesValidas(campus(a),minPos)$}
+\tadOperacion{proxPossHippies}{as/a,conj(pos)/poss}{conj(pos)}{(\paratodo{p}{poss}) $posValida(a,p) \yluego hayHippie?(a,p)$}
+\tadOperacion{estsCerca}{as/a,pos/p}{conj(pos)}{}
+\tadOperacion{hippieEncerrado?}{as/a,pos/p}{bool}{}
+\tadOperacion{hippieEncerradoEst?}{as/a,pos/p,conj(pos)/poss}{bool}{}
+\tadOperacion{hippieEncerradoSeg?}{as/a,pos/p,conj(pos)/poss}{bool}{}
 \tadOperacion{hippiesMasCerca}{as/a,seguridad/seg}{conj(pos)}{$seg \in seguridad(a) \land hayHippies(a)$}
 \tadOperacion{encerrado}{as/a,pos/p}{bool}{hayEst?(p)}
 \tadOperacion{\#hippies}{as/a}{nat}{}
@@ -113,7 +118,7 @@
 
 \tadAxiomas[]
 
-\tadAlinearAxiomas{\#paquetesEnviados(ingresarPaquete($dc$,$p_1$,$c_1$))}
+\tadAlinearAxiomas{\#paquetesEnviados(ingresarPaq($dc$,$p_1$))}
 \tadAlinearFunciones{encolarPaquetes(conjPaquetes,colaPrior)}{}
 
 \tadAxioma{campus(nueva($c,segs$))}{$c$}
@@ -133,6 +138,19 @@
 \tadAxioma{hayEst?(sacarEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE $hayEst?(a,p)$ FI}
 \tadAxioma{hayHippie?(nueva($c,segs$),$p$)}{$False$}
 \tadAxioma{hayHippie?((nuevoHippie($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayHippie?(a,p)$ FI}
+\tadAxioma{hayHippie?((moverEst($a,p_0,p_1$),$p$)}{\IF $hayHippie?(a,p)$ THEN 
+														{\IF $\neg(hippieEncerrado?(a,p))$ THEN 
+															$p \in proxPossHippies(a,possHippies(a))$
+														ELSE 
+															$False$
+														FI}
+												   ELSE 
+														{\IF $hayEst?(a,p)$ THEN 
+															$estEncerradoPorHippies(a,p)$
+														ELSE
+															$p \in proxPossHippies(a,possHippies(a))$
+														FI}
+												   FI}
 
 
 \tadAxioma{hayHippie?(nuevoEst($a,p_1$),$p$)}{$hayHippie?(a,p)$}
@@ -144,13 +162,6 @@
 \tadAxioma{\#capturas(nuevoHippie($a,p_1$),$s$)}{\IF $(adyacente(a,p_1,posSeg(a,s)) \land encerrado(a,p_1))$ THEN $1 + \#capturas(a,s)$ ELSE $\#capturas(a,s)$ FI}
 \tadAxioma{\#capturas(nuevoEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 \tadAxioma{\#capturas(sacarEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
-\tadAxioma{\#capturas($a$,moverSeg($a,s,p_1$))}{$
-\beta(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayHippie?(a,<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)+1,\pi_2(p_1)>))) + \\
-\beta(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayHippie?(a,<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)-1,\pi_2(p_1)>))) + \\
-\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + \\
-\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayHippie?(a,<\pi_1(p_1),\pi_2(p_1)-1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)-1>))) + \#capturas(a,s)$}
-
-
 
 \tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{
 
@@ -207,10 +218,10 @@
 								   {\IF $(hayHippies?(a))$ THEN 
 										$Ag(moverTodos(a, sinUno(segs)), $
 										\\$moverSeg(a,dameUno(segs),$
-										\\$dameUno(proxPosiciones$\\ $(hippiesMasCerca(a,dameUno(segs))))))$ 
-								    ELSE 
-										$moverIngreso(a,segs)$ 
-									FI} 
+										\\$dameUno(proxPoss(hippiesMasCerca(a,dameUno(segs))))))$
+								    ELSE
+										$moverIngreso(a,segs)$
+									FI}
 							   FI}
 
 \tadAxioma{moverIngreso(a,segs)}{\IF $\emptyset?(segs)$ THEN
@@ -228,6 +239,107 @@
 									FI}
 								FI}
 							   
+\tadAxioma{proxPoss(entCerca, p)}{\IF $\emptyset?(entCerca)$  THEN 
+														$\emptyset$ 
+											    ELSE 
+													{\IF $\pi_1(dameUno(entCerca))>\pi_1(p)$ THEN 
+															{\IF $\pi_2(dameUno(entCerca))>\pi_2(pos)$ THEN 
+																{\IF $\emptyset?(validas(a,\{<$\,$\pi_1(pos)$\,$+$\,$1,\pi_2(p)$\,$><$\,$\pi_1(p),\pi_2(p)$\,$+$\,$1$\,$>$\,$\}))$ THEN
+																	$proxPoss(sinUno(entCerca),p)$ 
+																ELSE
+																	$Ag(proxPoss(sinUno(entCerca),p),dameUno(validas$
+																	\\$(a,$\,$\{<$\,$\pi_1(p)$\,$+$\,$1,\pi_2(p)$\,$>,<$\,$\pi_1(p),\pi_2(p)+1>\})))$ 
+																FI}
+															ELSE 
+																{\IF $\pi_2(dameUno(entCerca))<\pi_2(p)$ THEN 
+																	{\IF $\emptyset?(validas(a,\{<$\,$\pi_1(p)$\,$+$\,$1,\pi_2(p)$\,$>$\,$<$\,$\pi_1(p),\pi_2(p)$\,$-$\,$1$\,$>$\,$\}))$ 
+																	THEN $proxPoss(sinUno(entCerca),p)$ 
+																	ELSE
+																		$Ag(proxPoss(sinUno(entCerca),p),dameUno(validas$
+																		\\$(a,\{<$\,$\pi_1(p)$\,$+$\,$1,\pi_2(p)$\,$><\pi_1(p),\pi_2(p)-1>\})))$ 
+																	FI}
+																ELSE 
+																	{\IF $\emptyset?(validas(a,\{<\pi_1(p)+1,\pi_2(p)>\}))$
+																	THEN
+																		$proxPoss(sinUno(entCerca),p)$ 
+																	ELSE
+																		$Ag(proxPoss(sinUno(entCerca),p),dameUno(validas$
+																		\\$(a,\{<$\,$\pi_1(p)$\,$+$\,$1,\pi_2(p)$\,$>\})))$ 
+																	FI}
+																FI}
+															FI}
+													ELSE
+														{\IF $\pi_1(dameUno(hscerca))<\pi_1(p)$ THEN 
+															{\IF $\pi_2(dameUno(hscerca))>\pi_2(p)$ THEN 
+																{\IF $\emptyset?(validas(a,$$\{<$\,$\pi_1(p)-$\,$1,\pi_2(p$\,$)$\,$><$\,$\pi_1(p),\pi_2(p)$\,$+$\,$1$\,$>$\,$\}))$
+																THEN
+																	$proxPoss(sinUno(entCerca),p)$ 
+																ELSE
+																	$Ag(proxPoss(sinUno(entCerca),p),dameUno(validas$
+																	\\$(a,$$\{<$\,$\pi_1(p)$\,$-$\,$1,\pi_2(p)$\,$>$$,<\pi_1(p),\pi_2(p)+1>\})))$ 
+																FI}
+															ELSE 
+																{\IF \,$\emptyset?(validas(a,$\,$\{<$\,$\pi_1(p)$\,$-$\,$1,\pi_2(p)$\,$><$\,$\pi_1(p),\pi_2(p)$\,$-$\,$1$\,$>$\,$\}))$ 
+																THEN
+																	$proxPoss(sinUno(entCerca),p)$ 
+																ELSE
+																	$Ag(proxPoss(sinUno(entCerca),p),dameUno(validas$
+																	\\$(a,$$\{<$\,$\pi_1(p)$\,$-$\,$1,\pi_2(p)$\,$><$\,$\pi_1(p),\pi_2(p)$\,$-$\,$1$\,$>$\,$\})))$ 
+																FI}
+															FI}
+														ELSE
+															{\IF $\pi_2(dameUno(hscerca))>\pi_2(p)$ THEN 
+																{\IF $\emptyset?(validas(a,\{<\pi_1(p),\pi_2(p)+1>\}))$ 
+																THEN
+																	$proxPoss(sinUno(entCerca),p)$ 
+																ELSE
+																	$Ag(proxPoss(sinUno(entCerca),p),$
+																	$dameUno(validas(a,$$\{<\pi_1(p),\pi_2(p)+1>\})))$ 
+																FI}
+															ELSE
+																{\IF $\emptyset?(validas(a,\{<\pi_1(p),\pi_2(p)-1>\}))$ 
+																THEN
+																	$proxPoss(sinUno(entCerca),p)$ 
+																ELSE
+																	$Ag(proxPoss(sinUno(entCerca),p),$
+																	$dameUno(validas(a,$$\{<\pi_1(p),\pi_2(p)-1>\})))$ 
+																FI}
+															FI}
+														FI}
+													FI} 
+												FI}
+												
+												
+\tadAxioma{validas(a,poss)}{\IF $\emptyset?(poss)$ THEN $\emptyset$ ELSE 
+								{\IF $posValida(dameUno(poss)) \land $
+									 \\$\neg(hayHippie?(a,dameUno(poss))) \land $
+									 \\$ \neg(hayEst?(a,dameUno(poss)))$
+									 \\$ \neg(haySeg?(a,dameUno(poss))$
+								THEN 
+									$Ag(validas(a,sinUno(poss)),dameUno(poss))$
+								ELSE
+									$validas(a,sinUno(poss))$
+								FI}
+							FI}
+
+\tadAxioma{hippieEncerrado?(a,p)}{$hipEncerradoEst?(a,p,adyacentes(campus(a),p)) \land hipEncerradoSeg?(a,p,adyacentes(campus(a),p))$}
+
+\tadAxioma{hipEncerradoEst?(a,p,adys)}{\IF $\emptyset?(adys)$ THEN $True$ ELSE 
+											{\IF $posValida?(campus(a),dameUno(adys))$ THEN 
+												$hayEst?(a,p)$ $\land$ $hipEncerradoEst?(a,p,sinUno(adys))$
+											ELSE 
+												$False$
+											FI}
+									  FI}
+
+\tadAxioma{hipEncerradoSeg?(a,p,adys)}{\IF $\emptyset?(adys)$ THEN $True$ ELSE 
+											{\IF $posValida?(campus(a),dameUno(adys))$ THEN 
+												$haySeg?(a,p)$ $\land$ $hipEncerradoSeg?(a,p,sinUno(adys))$
+											ELSE 
+												$False$
+											FI}
+									  FI}
+
 \tadAxioma{moverSeg(a,seg,nPos)}{\IF $(distMan(campus(a),\pi_2(seg),nPos) \ge 2$ \\$ \lor \neg(posValida(campus(a),nPos)))$ THEN
 									$seg$
 								 ELSE
@@ -236,52 +348,14 @@
 									 ELSE 
 										$seg$
 									FI}
-								 FI}
-\tadAxioma{proximasPosiciones(hscerca, posSeg)}{\IF $\emptyset?(hscerca)$  THEN 
-														$\emptyset$ 
-											    ELSE 
-													{\IF $\pi_1(dameUno(hscerca))>\pi_1(posSeg)$ THEN 
-															{\IF $\pi_2(dameUno(hscerca))>\pi_2(posSeg)$ THEN 
-																$\{<\pi_1(posSeg)+1,\pi_2(posSeg)>,$\\
-																$<\pi_1(posSeg),\pi_2(posSeg)+1>\}$\\
-																$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$ 
-															ELSE 
-																{\IF $\pi_2(dameUno(hscerca))<\pi_2(posSeg)$ THEN 
-																	$\{<\pi_1(posSeg)+1,\pi_2(posSeg)>,$\\
-																	$<\pi_1(posSeg),\pi_2(posSeg)-1>\}$\\
-																	$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
-																ELSE 
-																	$\{<\pi_1(posSeg)+1,\pi_2(posSeg)>\}$\\
-																	$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
-																FI}
-															FI}
-													ELSE
-														{\IF $\pi_1(dameUno(hscerca))<\pi_1(posSeg)$ THEN 
-															{\IF $\pi_2(dameUno(hscerca))>\pi_2(posSeg)$ THEN 
-																$\{<\pi_1(posSeg)-1,\pi_2(posSeg)>,$\\
-																$<\pi_1(posSeg),\pi_2(posSeg)+1>\}$\\
-																$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$ 
-															ELSE 
-																{\IF $\pi_2(dameUno(hscerca))<\pi_2(posSeg)$ THEN 
-																	$\{<\pi_1(posSeg)-1,\pi_2(posSeg)>,$\\
-																	$<\pi_1(posSeg),\pi_2(posSeg)-1>\}$\\
-																	$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
-																ELSE 
-																	$\{<\pi_1(posSeg)-1,\pi_2(posSeg)>\}$\\
-																	$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
-																FI}
-															FI}
-														ELSE
-															{\IF $\pi_2(dameUno(hscerca))>\pi_2(posSeg)$ THEN 
-																$\{<\pi_1(posSeg),\pi_2(posSeg)+1>\}$\\
-																$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$ 
-															ELSE 
-																$\{<\pi_1(posSeg),\pi_2(posSeg)-1>\}$\\
-																$\cup$ $proxPosiciones(sinUno(minPos),posSeg)$
-															FI}
-														FI}
-													FI} 
-												FI}
+								 FI}												
+
+\tadAxioma{proxPossHippies(a,possHippies)}{\IF $\emptyset?(possHippies)$ THEN $\emptyset$
+										   ELSE 
+										    	$proxPoss(a,estsCerca(dameUno(possHippies),dameUno(possHippies))) \cup $
+										    	\\$proxPossHippies(a,sinUno(possHippies))$
+										   FI}
+
 \tadAxioma{hippiesMasCerca(a,seg)}{$minDistsPos(campus(a),\pi_2(seg),posHippies(a))$}
 
 
@@ -317,7 +391,7 @@
 								  
 \tadAxioma{masVigilante(a)}{$dameUno(masCapturas(a,seguridad(a)))$}
 \tadAxioma{masCapturas(a,segs)}{\IF $\neg(\emptyset?(segs))$ THEN	
-									{\IF $\#capturas(a,dameUno(segs))$$\ge$$maxCapturas(a,segs)$ 
+									{\IF $\#capturas(a,dameUno(segs))$ $\ge$ $maxCapturas(a,segs)$ 
 									THEN 
 										$ag(masCapturas(a,sinUno(segs)), dameUno(segs))$ 
 									ELSE 
@@ -397,6 +471,7 @@ FI}
 \tadOperacion{distMan}{campus/c,pos/p1,pos/p2}{nat}{}
 \tadOperacion{restaAbs}{nat,nat}{nat}{}
 \tadOperacion{conjPos}{campus,nat,nat}{conj(pos)}{}
+\tadOperacion{adyacentes}{campus,pos}{conj(pos)}{}
 
 \tadAxiomas[\paratodo{nat}{alto}, \paratodo{nat}{ancho}, \paratodo{conj (pos)}{obst}
 \\\paratodo{pos}{p _1} \paratodo {pos}{p _2}]
@@ -439,6 +514,7 @@ FI}
 									$ag(conjPos(c,x,y+1), <x,y>)$
 								FI}
 							FI}
+\tadAxioma{adyacentes(campus,p)}{$\{<\pi_1(p)+1,\pi_2(p)+1><\pi_1(p)-1,\pi_2(p)-1><\pi_1(p)+1,\pi_2(p)><\pi_1(p),\pi_2(p)+1> \}$}
 
 \end{tad}
 
