@@ -110,6 +110,8 @@
 \tadOperacion{\#masCapturas}{as/a,conj(seg)/segs}{conj(seg)}{(\paratodo {s}{segs}) s $\in seguridad(a)$}
 \tadOperacion{\#maxCapturas}{as/a,conj(seg)/segs}{nat}{(\paratodo {s}{segs}) $\in seguridad(a)$}
 \tadOperacion{captura?}{as/a,pos/p}{bool}{posValida(campus(as),p)}
+\tadOperacion{hippiesVecinos}{as/a,pos/p}{nat}{posValida(campus(as),p)}
+\tadOperacion{HippieNatural}{as/a,pos/p}{nat}{posValida(campus(as),p)}
 
 \tadAxiomas[]
 
@@ -128,7 +130,8 @@
 \tadAxioma{seguridad(sacarEst($a,p_1$))}{$seguridad(a)$}
 \tadAxioma{hayEst?(nueva($c,segs$),$p$)}{$False$}
 \tadAxioma{hayEst?(nuevoEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI}
-\tadAxioma{hayEst?(moverEst($a,p_1,p_2$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE {\IF $p_2=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI} FI}
+\tadAxioma{hayEst?(moverEst($a,p_1,p_2$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE {\IF $p_2=p$ THEN 
+$\neg(hippiesVecinos(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
 \tadAxioma{hayEst?(nuevoHippie($a,p_1$),$p$)}{$hayEst?(a,p)$}
 \tadAxioma{hayEst?(sacarEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE $hayEst?(a,p)$ FI}
 \tadAxioma{hayHippie?(nueva($c,segs$),$p$)}{$False$}
@@ -395,11 +398,9 @@ $True$
 FI}
 
 }
-
-\tadAxioma{posValidadPersona(a,p)}{\IF \neg(hayObstaculo?(campus(a),p)) THEN 
-$(\pi_2(p)=0 \lor \pi_2=alto(campus(a)))$ ELSE
-$False$
-FI}
+\tadAxioma{hippiesVecinos($a,p$)}{\IF hayHippie?(a,p) THEN 1 ELSE 0 FI}
+\tadAxioma{hippieNatural($a,p$)}{{\IF posValida (campus(a),<$\pi_1(p)+1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)+1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p)-1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)-1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)+1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)+1$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)-1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)-1$>) ELSE 0 FI}}
+\tadAxioma{posValidaPersona($a,p$)}{\IF $ \neg(hayObstaculo?(campus(a),p)) $THEN $(\pi_2(p)=0 \lor \pi_2$=alto(campus(a))) ELSE $False$ FI}
 
 \end{tad}
 
