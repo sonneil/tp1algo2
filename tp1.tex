@@ -164,7 +164,7 @@ $\neg(hippiesVecinos(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
 
 \tadAxioma{\#capturas(nueva($a,segs$),$s$)}{$0$}
 \tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{$\#capturas(a,s)$}
-\tadAxioma{\#capturas(nuevoHippie($a,p_1$),$s$)}{\IF $(adyacente(a,p_1,posSeg(a,s)) \land encerrado(a,p_1))$ THEN $1 + \#capturas(a,s)$ ELSE $\#capturas(a,s)$ FI}
+\tadAxioma{\#capturas(nuevoHippie($a,p_1$),$s$)}{\IF $(adyacente(a,p_1,posSeg(a,s)))$ THEN $capturadoHippie(a,p_1) + \#capturas(a,s)$ ELSE $\#capturas(a,s)$ FI}
 \tadAxioma{\#capturas(nuevoEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 \tadAxioma{\#capturas(sacarEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 
@@ -181,7 +181,7 @@ capturadoHippie(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +
 
 \tadAxioma{\#sanciones(nueva($a,segs$),$s$)}{$0$}
 \tadAxioma{\#sanciones(moverEst($a,p_1,p_2$),$s$)}{$\#sanciones(a,s)$}
-\tadAxioma{\#sanciones(nuevoHippie($a,p_1$),$s$)}{\IF $(cercanos?(a,p_1,posSeg(a,s)) \yluego (hayEst?(casilleroEnComun(a,p_1,posSeg(a,s))) \land encerrado(casilleroEnComun(a,p_1,posSeg(a,s)))))$ THEN $1 + \#sanciones(a,s)$ ELSE $\#sanciones(a,s)$ FI}
+\tadAxioma{\#sanciones(nuevoHippie($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones(nuevoEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones(sacarEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 
