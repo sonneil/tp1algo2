@@ -70,11 +70,11 @@
 \begin{tad}{\tadNombre{AS}}
 \tadGeneros{as}
 
-\tadIgualdadObservacional{facu}{facu'}{as}{$campus(facu)=campus(facu') \land seguridad(facu)= seguridad (facu') $}
+\tadIgualdadObservacional{facu}{facu'}{as}{campus(facu)=campus(facu')  \\$\land$ seguridad(facu)=seguridad(facu') \\$\land$ (\paratodo{p}{pos})(posValida(campus(facu),p)) hayEst?(facu,p)$\iff$hayEst?(facu',p) $\land$ (\paratodo{p}{pos})(posValida(campus(facu),p)) hayHippie?(facu,p)$\iff$hayHippie?(facu',p) $\land$ (\paratodo{s}{seg})(s$\in$seguridad(a))\\ (\#capturas(facu,s)=\#capturas(facu',s) \\$\land$ \#sanciones(facu,s)=\#sanciones(facu',s))}
 
-\tadUsa{\tadNombre{campus}}
+\tadUsa{\tadNombre{campus},\tadNombre{bool},\tadNombre{nat},\tadNombre{tupla},\tadNombre{seg}}
 
-\tadExporta{\tadNombre{}}
+\tadExporta{\tadNombre{as},generadores, observadores,\#hippies,\#estudiantes,\#masVigilante }
 
 \tadObservadores
 \tadOperacion{campus}{as}{campus}{}
@@ -94,9 +94,9 @@
 
 \tadOtrasOperaciones
 
-\tadOperacion{haySeg?}{as/a,pos/p}{bool}{}
-\tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{}
-\tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
+\tadOperacion{haySeg?}{as/a,pos/p}{bool}{posValida(campus(as),p)}
+\tadOperacion{posValidaPersona}{as/a,pos/p}{bool}{posValida(campus(as),p)}
+\tadOperacion{posIngreso}{as/a,pos/p}{bool}{posValida(campus(as),p)}
 \tadOperacion{moverTodos}{as/a,conj(seguridad)/segs}{conj(seguridad)}{}
 \tadOperacion{moverSeg}{as/a,seguridad/seg,pos/posSig}{seguridad}{}
 \tadOperacion{proxPoss}{as/a,conj(pos)/minPos,pos/posAct}{conj(pos)}{$\neg(emptyset?(minPos)) \yluego posValida(campus(a),posAct) \land posicionesValidas(campus(a),minPos)$}
@@ -106,7 +106,7 @@
 \tadOperacion{hippieEncerradoEst?}{as/a,pos/p,conj(pos)/poss}{bool}{}
 \tadOperacion{hippieEncerradoSeg?}{as/a,pos/p,conj(pos)/poss}{bool}{}
 \tadOperacion{hippiesMasCerca}{as/a,seguridad/seg}{conj(pos)}{$seg \in seguridad(a) \land hayHippies(a)$}
-\tadOperacion{encerrado}{as/a,pos/p}{bool}{hayEst?(p)}
+\tadOperacion{encerrado}{as/a,pos/p}{bool}{$posValida(campus(as),p) \land hayEst?(p)$}
 \tadOperacion{\#hippies}{as/a}{nat}{}
 \tadOperacion{\#estudiantes}{as/a}{nat}{}
 \tadOperacion{\#masVigilante}{as/a}{nat}{}
@@ -114,7 +114,9 @@
 \tadOperacion{contarEstudiantes}{as/a,conj(pos)/poss}{nat}{}
 \tadOperacion{\#masCapturas}{as/a,conj(seg)/segs}{conj(seg)}{(\paratodo {s}{segs}) s $\in seguridad(a)$}
 \tadOperacion{\#maxCapturas}{as/a,conj(seg)/segs}{nat}{(\paratodo {s}{segs}) $\in seguridad(a)$}
-\tadOperacion{captura?}{as/a,pos/p}{bool}{}
+\tadOperacion{captura?}{as/a,pos/p}{bool}{posValida(campus(as),p)}
+\tadOperacion{hippiesVecinos}{as/a,pos/p}{nat}{posValida(campus(as),p)}
+\tadOperacion{HippieNatural}{as/a,pos/p}{nat}{posValida(campus(as),p)}
 
 \tadAxiomas[]
 
@@ -133,7 +135,8 @@
 \tadAxioma{seguridad(sacarEst($a,p_1$))}{$seguridad(a)$}
 \tadAxioma{hayEst?(nueva($c,segs$),$p$)}{$False$}
 \tadAxioma{hayEst?(nuevoEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI}
-\tadAxioma{hayEst?(moverEst($a,p_1,p_2$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE {\IF $p_2=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI} FI}
+\tadAxioma{hayEst?(moverEst($a,p_1,p_2$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE {\IF $p_2=p$ THEN 
+$\neg(hippiesVecinos(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
 \tadAxioma{hayEst?(nuevoHippie($a,p_1$),$p$)}{$hayEst?(a,p)$}
 \tadAxioma{hayEst?(sacarEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE $hayEst?(a,p)$ FI}
 \tadAxioma{hayHippie?(nueva($c,segs$),$p$)}{$False$}
@@ -170,23 +173,19 @@
     {\IF $(captura?(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
     ELSE $0$ FI}
     ELSE $0$ FI}\\
-    
     +\\
-    
     {\IF $(PosValida(campus(a),<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
     {\IF $(hayHippie(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
     {\IF $(captura?(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
     ELSE $0$ FI}
     ELSE $0$ FI}\\
     +\\
-    
     {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
     {\IF $(hayHippie(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
     {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN $1$ ELSE $0$ FI}
     ELSE $0$ FI}
     ELSE $0$ FI}\\
     +\\
-    
     {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
     {\IF $(hayHippie(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
     {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN $1$ ELSE $0$ FI}
@@ -203,13 +202,35 @@
 \tadAxioma{\#sanciones(nuevoHippie($a,p_1$),$s$)}{\IF $(cercanos?(a,p_1,posSeg(a,s)) \yluego (hayEst?(casilleroEnComun(a,p_1,posSeg(a,s))) \land encerrado(casilleroEnComun(a,p_1,posSeg(a,s)))))$ THEN $1 + \#sanciones(a,s)$ ELSE $\#sanciones(a,s)$ FI}
 \tadAxioma{\#sanciones(nuevoEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones(sacarEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
-\tadAxioma{\#sanciones($a$,moverSeg($a,s,p_1$))}{$
-\beta(posValida(campus(a),<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego (hayEst?(a,<\pi_1(p_1)+1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)+1,\pi_2(p_1)>))) + \\
-\beta(posValida(campus(a),<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego (hayEst?(a,<\pi_1(p_1)-1,\pi_2(p_1)>) \yluego encerrado(a,<\pi_1(p_1)-1,\pi_2(p_1)>))) + \\
-\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)+1>) \yluego (hayEst?(a,<\pi_1(p_1),\pi_2(p_1)+1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)+1>))) + \\
-\beta(posValida(campus(a),<\pi_1(p_1),\pi_2(p_1)-1>) \yluego (hayEst?(a,<\pi_1(p_1),\pi_2(p_1)-1>) \yluego encerrado(a,<\pi_1(p_1),\pi_2(p_1)-1>))) + \#sanciones(a,s)$}
 
 
+\tadAxioma{\#sanciones(moverEst($a,p_1,p_2$),$s$)}{
+
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
+    {\IF $(hayEst(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    +\\
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
+    {\IF $(hayEst(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    +\\
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
+    {\IF $(hayEst(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    +\\
+    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
+    {\IF $(hayEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
+    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}\\
+    + $\#sanciones(a,s)$
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Axiomas otras operaciones%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \tadAxioma{moverTodos(a,segs)}{\IF $(\emptyset?(segs))$ THEN 
@@ -439,7 +460,9 @@ $True$
 FI}
 
 }
-
+\tadAxioma{hippiesVecinos($a,p$)}{\IF hayHippie?(a,p) THEN 1 ELSE 0 FI}
+\tadAxioma{hippieNatural($a,p$)}{{\IF posValida (campus(a),<$\pi_1(p)+1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)+1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p)-1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)-1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)+1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)+1$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)-1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)-1$>) ELSE 0 FI}}
+\tadAxioma{posValidaPersona($a,p$)}{\IF $ \neg(hayObstaculo?(campus(a),p)) $THEN $(\pi_2(p)=0 \lor \pi_2$=alto(campus(a))) ELSE $False$ FI}
 
 \end{tad}
 
@@ -448,9 +471,9 @@ FI}
 \begin{tad}{\tadNombre{campus}}
 \tadGeneros{campus}
 
-\tadUsa{\tadNombre{campus}}
+\tadUsa{\tadNombre{bool},\tadNombre{nat},\tadNombre{tupla}}
 
-\tadExporta{\tadNombre{}}
+\tadExporta{\tadNombre{campus}, observadores, generadores, posValida, posIngreso,minDistPos,adyacente,}
 
 \tadObservadores
 \tadOperacion{alto}{campus}{nat}{}
@@ -463,15 +486,16 @@ FI}
 
 \tadOtrasOperaciones
 
-\tadOperacion{adyacente}{as/a,pos/pe,pos/pd}{bool}{$posValida(c,pe) \land posValida(c,pd)$}
-\tadOperacion{posValida}{as/a,pos/p}{bool}{}
-\tadOperacion{posIngreso}{as/a,pos/p}{bool}{}
-\tadOperacion{minDistsPos}{campus/c,pos/p,conj(pos)/posiciones}{conj(pos)}{$\neg(\emptyset?(posiciones))$}
-\tadOperacion{minDist}{campus/c,pos/p,conj(posiciones)/posiciones}{nat}{$\neg(\emptyset?(posiciones))$}
-\tadOperacion{distMan}{campus/c,pos/p1,pos/p2}{nat}{}
+\tadOperacion{adyacente}{campus/c,pos/pe,pos/pd}{bool}{$posValida(c,pe) \land posValida(c,pd)$}
+\tadOperacion{posValida}{campus/c,pos/p}{bool}{}
+\tadOperacion{posIngreso}{campus/c,pos/p}{bool}{posValida(c,p)}
+\tadOperacion{minDistsPos}{campus/c,pos/p,conj(pos)/posiciones}{conj(pos)}{$posValida(c,p) \land \neg(\emptyset?(posiciones))$}
+\tadOperacion{minDist}{campus/c,pos/p,conj(posiciones)/posiciones}{nat}{$posValida(c,p) \land \neg(\emptyset?(posiciones))$}
+\tadOperacion{distMan}{campus/c,pos/p1,pos/p2}{nat}{$posValida(c,p1) \land posValida(c,p2)$}
 \tadOperacion{restaAbs}{nat,nat}{nat}{}
 \tadOperacion{conjPos}{campus,nat,nat}{conj(pos)}{}
 \tadOperacion{adyacentes}{campus,pos}{conj(pos)}{}
+\tadOperacion{hayObstaculo?}{campus/c,pos/p}{bool}{posValida(c,p)}
 
 \tadAxiomas[\paratodo{nat}{alto}, \paratodo{nat}{ancho}, \paratodo{conj (pos)}{obst}
 \\\paratodo{pos}{p _1} \paratodo {pos}{p _2}]
@@ -485,7 +509,6 @@ FI}
 \tadAxioma{obstaculos(nuevo($ancho$,$alto$,$obst$))}{$obst$}
 \tadAxioma{posValida(nuevo($ancho$,$alto$,$obst$),$p_1$)}{$\pi_1(p_1)<ancho \land \pi_2(p_1)<alto$}
 \tadAxioma{adyacente(nuevo($ancho$,$alto$,$obst$),$p _1$,$p _2$)}{$(\pi_1(p_1)=\pi_1(p_2)-1 \lor\pi_1(p_1)=\pi_1(p_2)+1)\land (\pi_2(p_1)=\pi_2(p_2)-1 \lor\pi_2(p_1)=\pi_2(p_2)+1)$}
-\tadAxioma{posValida(nuevo($ancho$,$alto$,$obst$),$p_1$)}{$\pi_2(p_1)=alto-1 \lor \pi_2(p_1)=0$}
 \tadAxioma{minDistsPos(c,p,posiciones)}{\IF $\emptyset?(sinUno(posiciones))$ THEN
 											$dameUno(posiciones)$
 									   ELSE
@@ -515,6 +538,8 @@ FI}
 								FI}
 							FI}
 \tadAxioma{adyacentes(campus,p)}{$\{<\pi_1(p)+1,\pi_2(p)+1><\pi_1(p)-1,\pi_2(p)-1><\pi_1(p)+1,\pi_2(p)><\pi_1(p),\pi_2(p)+1> \}$}
+
+\tadAxioma{hayObstaculo?(c,p)}{$p \in obstaculos(c)$}
 
 \end{tad}
 
