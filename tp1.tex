@@ -112,6 +112,8 @@
 \tadOperacion{captura?}{as/a,pos/p}{bool}{posValida(campus(as),p)}
 \tadOperacion{hippiesVecinos}{as/a,pos/p}{nat}{posValida(campus(as),p)}
 \tadOperacion{HippieNatural}{as/a,pos/p}{nat}{posValida(campus(as),p)}
+\tadOperacion{capturadaHippie}{as/a,pos/p}{nat}{}
+\tadOperacion{capturadaEst}{as/a,pos/p}{nat}{}
 
 \tadAxiomas[]
 
@@ -151,31 +153,11 @@ $\neg(hippiesVecinos(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
 
 
 \tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{
-
-    {\IF $(PosValida(campus(a),<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
-    {\IF $(hayHippie(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
-    {\IF $(captura?(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
-    ELSE $0$ FI}
-    ELSE $0$ FI}\\
-    +\\
-    {\IF $(PosValida(campus(a),<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
-    {\IF $(hayHippie(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
-    {\IF $(captura?(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
-    ELSE $0$ FI}
-    ELSE $0$ FI}\\
-    +\\
-    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
-    {\IF $(hayHippie(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
-    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN $1$ ELSE $0$ FI}
-    ELSE $0$ FI}
-    ELSE $0$ FI}\\
-    +\\
-    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
-    {\IF $(hayHippie(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
-    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN $1$ ELSE $0$ FI}
-    ELSE $0$ FI}
-    ELSE $0$ FI}\\
-    + $\#capturas(a,s)$
+$capturadoHippie(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>) +
+capturadoHippie(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>) +
+capturadoHippie(a,<\pi_1(posSeg),\pi_2(posSeg)+1>) +
+capturadoHippie(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +
+\#capturas(a,s)$
 }
 
 
@@ -189,31 +171,11 @@ $\neg(hippiesVecinos(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
 
 
 \tadAxioma{\#sanciones(moverEst($a,p_1,p_2$),$s$)}{
-
-    {\IF $(PosValida(campus(a),<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
-    {\IF $(hayEst(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN
-    {\IF $(captura?(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
-    ELSE $0$ FI}
-    ELSE $0$ FI}\\
-    +\\
-    {\IF $(PosValida(campus(a),<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
-    {\IF $(hayEst(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN
-    {\IF $(captura?(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>))$ THEN $1$ ELSE $0$ FI}
-    ELSE $0$ FI}
-    ELSE $0$ FI}\\
-    +\\
-    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
-    {\IF $(hayEst(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN
-    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)+1>))$ THEN $1$ ELSE $0$ FI}
-    ELSE $0$ FI}
-    ELSE $0$ FI}\\
-    +\\
-    {\IF $(PosValida(campus(a),<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
-    {\IF $(hayEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN
-    {\IF $(captura?(a,<\pi_1(posSeg),\pi_2(posSeg)-1>))$ THEN $1$ ELSE $0$ FI}
-    ELSE $0$ FI}
-    ELSE $0$ FI}\\
-    + $\#sanciones(a,s)$
+$capturadoEst(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>) +
+capturadoEst(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>) +
+capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)+1>) +
+capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +
+\#sanciones(a,s)$
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Axiomas otras operaciones%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
@@ -381,6 +343,23 @@ $True$
 FI}
 
 }
+
+\tadAxioma{capturadoHippie($a,p$))}{
+    {\IF $(PosValida(campus(a),p))$ THEN
+    {\IF $(hayHippie(a,p))$ THEN
+    {\IF $(captura?(a,p))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}
+}
+
+\tadAxioma{capturadoEst($a,p$))}{
+    {\IF $(PosValida(campus(a),p))$ THEN
+    {\IF $(hayEst(a,p))$ THEN
+    {\IF $(captura?(a,p))$ THEN $1$ ELSE $0$ FI}
+    ELSE $0$ FI}
+    ELSE $0$ FI}
+}
+
 \tadAxioma{hippiesVecinos($a,p$)}{\IF hayHippie?(a,p) THEN 1 ELSE 0 FI}
 \tadAxioma{hippieNatural($a,p$)}{{\IF posValida (campus(a),<$\pi_1(p)+1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)+1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p)-1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)-1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)+1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)+1$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)-1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)-1$>) ELSE 0 FI}}
 \tadAxioma{posValidaPersona($a,p$)}{\IF $ \neg(hayObstaculo?(campus(a),p)) $THEN $(\pi_2(p)=0 \lor \pi_2$=alto(campus(a))) ELSE $False$ FI}
