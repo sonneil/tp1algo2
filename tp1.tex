@@ -35,7 +35,7 @@
 \thispagestyle{fancy}
 \addtolength{\headheight}{1pt}
 \lhead{Algoritmos y Estructuras de Datos II}
-\rhead{$1^{\mathrm{er}}$ cuatrimestre de 2015}
+\rhead{$2^{\mathrm{do}}$ cuatrimestre de 2015}
 \cfoot{\thepage /\pageref{LastPage}}
 \renewcommand{\footrulewidth}{0.4pt}
 
@@ -114,7 +114,7 @@
 \tadOperacion{\#maxCapturas}{as/a,conj(seg)/segs}{nat}{(\paratodo {s}{segs}) $\in seguridad(a)$}
 \tadOperacion{captura?}{as/a,pos/p}{bool}{posValida(campus(as),p)}
 \tadOperacion{hippiesVecinos}{as/a,pos/p}{nat}{posValida(campus(as),p)}
-\tadOperacion{HippieNatural}{as/a,pos/p}{nat}{posValida(campus(as),p)}
+\tadOperacion{hippiesAlrededor}{as/a,pos/p}{nat}{posValida(campus(as),p)}
 \tadOperacion{capturadaHippie}{as/a,pos/p}{nat}{}
 \tadOperacion{capturadaEst}{as/a,pos/p}{nat}{}
 \tadOperacion{validas}{as/a,conj(pos)/p}{conj(pos)}{}
@@ -141,7 +141,7 @@
 \tadAxioma{hayEst?(nueva($c,segs$),$p$)}{$False$}
 \tadAxioma{hayEst?(nuevoEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $True$ ELSE $hayEst?(a,p)$ FI}
 \tadAxioma{hayEst?(moverEst($a,p_1,p_2$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE {\IF $p_2=p$ THEN 
-$\neg(hippiesVecinos(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
+$\neg(hippiesAlrededor(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
 \tadAxioma{hayEst?(nuevoHippie($a,p_1$),$p$)}{$hayEst?(a,p)$}
 \tadAxioma{hayEst?(sacarEst($a,p_1$),$p$)}{\IF $p_1=p$ THEN $False$ ELSE $hayEst?(a,p)$ FI}
 \tadAxioma{hayHippie?(nueva($c,segs$),$p$)}{$False$}
@@ -154,7 +154,7 @@ $\neg(hippiesVecinos(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
 														FI}
 												   ELSE 
 														{\IF $hayEst?(a,p)$ THEN 
-															$(hippiesVecinos(a,p) \ge 2)$
+															$(hippiesAlrededor(a,(a,p) \ge 2)$
 														ELSE
 															$p \in proxPossHippies(a,possHippies(a))$
 														FI}
@@ -166,35 +166,33 @@ $\neg(hippiesVecinos(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
 
 
 \tadAxioma{\#capturas(nueva($a,segs$),$s$)}{$0$}
-\tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{$\#capturas(a,s)$}
 \tadAxioma{\#capturas(nuevoHippie($a,p_1$),$s$)}{\IF $(adyacente(a,p_1,posSeg(a,s)))$ THEN $capturadoHippie(a,p_1) + \#capturas(a,s)$ ELSE $\#capturas(a,s)$ FI}
 \tadAxioma{\#capturas(nuevoEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 \tadAxioma{\#capturas(sacarEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 
 \tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{
-$capturadoHippie(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>) +
-capturadoHippie(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>) +
-capturadoHippie(a,<\pi_1(posSeg),\pi_2(posSeg)+1>) +
-capturadoHippie(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +
-\#capturas(a,s)$
+$capturadoHippie(a,<$\,$\pi_1(posSeg)$\,$+$\,$1,\pi_2(posSeg)$\,$>) +$
+\\$capturadoHippie(a,<$\,$\pi_1(posSeg)$\,$-$\,$1,\pi_2(posSeg)>) +$
+\\$capturadoHippie(a,<$\,$\pi_1(posSeg),\pi_2(posSeg)$\,$+$\,$1$\,$>) +$
+\\$capturadoHippie(a,<$\,$\pi_1(posSeg),\pi_2(posSeg)$\,$-$\,$1$\,$>) +$
+\\$\#capturas(a,s)$
 }
 
 
 
 
 \tadAxioma{\#sanciones(nueva($a,segs$),$s$)}{$0$}
-\tadAxioma{\#sanciones(moverEst($a,p_1,p_2$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones(nuevoHippie($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones(nuevoEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 \tadAxioma{\#sanciones(sacarEst($a,p_1$),$s$)}{$\#sanciones(a,s)$}
 
 
 \tadAxioma{\#sanciones(moverEst($a,p_1,p_2$),$s$)}{
-$capturadoEst(a,<\pi_1(posSeg)+1,\pi_2(posSeg)>) +
-capturadoEst(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>) +
-capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)+1>) +
-capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +
-\#sanciones(a,s)$
+$capturadoEst(a,<$\,$\pi_1(posSeg)$\,$+$\,$1,\pi_2(posSeg)$\,$>) +$
+\\$capturadoEst(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>) +$
+\\$capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)+1>) +$
+\\$capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +$
+\\$\#sanciones(a,s)$
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Axiomas otras operaciones%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
@@ -209,21 +207,6 @@ capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +
 										$moverIngreso(a,segs)$
 									FI}
 							   FI}
-
-\tadAxioma{moverIngreso(a,segs)}{\IF $\emptyset?(segs)$ THEN
-									$\emptyset$
-								ELSE
-									{\IF $(alto(campus(a))-1)-\pi_2(dameUno(segs)) > \pi_2(dameUno(segs))$ THEN
-										$ag(moverIngreso(a,sinUno(segs)), mover(dameUno(segs), <(\pi_1(dameUno(segs)),\pi_2(segs)-1)>))$
-									ELSE
-										{\IF $(alto(campus(a))-1)-\pi_2(dameUno(segs)) < \pi_2(dameUno(segs))$ THEN 
-											$ag(moverIngreso(a,sinUno(segs)), mover(dameUno(segs), <(\pi_1(dameUno(segs)),\pi_2(segs)+1)>))$
-										ELSE
-											$ag(moverIngreso(a,sinUno(segs)), mover(dameUno(segs), $\\
-											$dameUno(\{<(\pi_1(dameUno(segs)),\pi_2(segs)-1)>, <(\pi_1(dameUno(segs)),\pi_2(segs)+1)>)\}))$
-										FI}
-									FI}
-								FI}
 							   
 \tadAxioma{proxPoss(entCerca, p)}{\IF $\emptyset?(entCerca)$  THEN 
 														$\emptyset$ 
@@ -294,7 +277,21 @@ capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +
 														FI}
 													FI} 
 												FI}
-												
+									
+\tadAxioma{moverIngreso(a,segs)}{\IF $\emptyset?(segs)$ THEN
+									$\emptyset$
+								ELSE
+									{\IF $(alto(campus(a))-1)$\,$-$\,$\pi_2(dameUno(segs))$\,$>$\,$\pi_2(dameUno(segs))$ THEN
+										$ag(moverIngreso(a,sinUno(segs)),mover(dameUno(segs),<(\pi_1(dameUno(segs)),\pi_2(segs)-1)$\,$>))$
+									ELSE
+										{\IF $(alto(campus(a))$\,$-$\,$1)$\,$-$\,$\pi_2(dameUno(segs))$\,$<$\,$\pi_2(dameUno(segs))$ THEN 
+											$ag(moverIngreso(a,sinUno(segs)), mover(dameUno(segs), <(\pi_1(dameUno(segs)),\pi_2(segs)+1)>))$
+										ELSE
+											$ag(moverIngreso(a,sinUno(segs)), mover(dameUno(segs), $\\
+											$dameUno(\{<(\pi_1(dameUno(segs)),\pi_2(segs)-1)>, <(\pi_1(dameUno(segs)),\pi_2(segs)+1)>)\}))$
+										FI}
+									FI}
+								FI}			
 						
 \tadAxioma{posValidaAS(a,p)}{$posValida(dameUno(poss)) \land $
 							\\$ \neg(hayHippie?(a,dameUno(poss))) \land $
@@ -344,8 +341,8 @@ capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +
 
 \tadAxioma{proxPossHippies(a,possHippies)}{\IF $\emptyset?(possHippies)$ THEN $\emptyset$
 										   ELSE 
-										    	$proxPoss(a,estsCerca(dameUno(possHippies),dameUno(possHippies))) \cup $
-										    	\\$proxPossHippies(a,sinUno(possHippies))$
+										    	$proxPoss(a,estsCerca(dameUno(possHippies),dameUno(possHippies)))$
+										    	\\ $\cup proxPossHippies(a,sinUno(possHippies))$
 										   FI}
 
 \tadAxioma{hippiesMasCerca(a,seg)}{$minDistsPos(campus(a),\pi_2(seg),posHippies(a,conjPos(campus(a))))$}
@@ -439,7 +436,7 @@ FI}
 }
 
 \tadAxioma{hippiesVecinos($a,p$)}{\IF hayHippie?(a,p) THEN 1 ELSE 0 FI}
-\tadAxioma{hippieNatural($a,p$)}{{\IF posValida (campus(a),<$\pi_1(p)+1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)+1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p)-1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)-1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)+1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)+1$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)-1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)-1$>) ELSE 0 FI}}
+\tadAxioma{hippiesAlrededor($a,p$)}{{\IF posValida (campus(a),<$\pi_1(p)+1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)+1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p)-1,\pi_2(p)$>)THEN hippiesVecinos(a,<$\pi_1(p)-1,\pi_2(p)$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)+1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)+1$>) ELSE 0 FI}+{\IF posValida (campus(a),<$\pi_1(p),\pi_2(p)-1$>)THEN hippiesVecinos(a,<$\pi_1(p),\pi_2(p)-1$>) ELSE 0 FI}}
 \tadAxioma{posValidaPersona($a,p$)}{\IF $ \neg(hayObstaculo?(campus(a),p)) $THEN $(\pi_2(p)=0 \lor \pi_2$=alto(campus(a))) ELSE $False$ FI}
 
 \end{tad}
@@ -485,8 +482,8 @@ FI}
 \tadAxioma{alto(nuevo($ancho$,$alto$,$obst$))}{$alto$}
 \tadAxioma{ancho(nuevo($ancho$,$alto$,$obst$))}{$ancho$}
 \tadAxioma{obstaculos(nuevo($ancho$,$alto$,$obst$))}{$obst$}
-\tadAxioma{posValida(nuevo($ancho$,$alto$,$obst$),$p_1$)}{$\pi_1(p_1)<ancho \land \pi_2(p_1)<alto$}
-\tadAxioma{adyacente(nuevo($ancho$,$alto$,$obst$),$p _1$,$p _2$)}{$(\pi_1(p_1)=\pi_1(p_2)-1 \lor\pi_1(p_1)=\pi_1(p_2)+1)\land (\pi_2(p_1)=\pi_2(p_2)-1 \lor\pi_2(p_1)=\pi_2(p_2)+1)$}
+\tadAxioma{posValida(c,p)}{$\pi_1(p)<ancho \land \pi_2(p)<alto \land \neg(hayObstaculo?(a,p))$}
+\tadAxioma{adyacente($c$,$p _1$,$p _2$)}{$(\pi_1(p_1)=\pi_1(p_2)-1 \lor\pi_1(p_1)=\pi_1(p_2)+1)\lor (\pi_2(p_1)=\pi_2(p_2)-1 \lor\pi_2(p_1)=\pi_2(p_2)+1)$}
 \tadAxioma{minDistsPos(c,p,posiciones)}{\IF $\emptyset?(sinUno(posiciones))$ THEN
 											$dameUno(posiciones)$
 									   ELSE
@@ -515,7 +512,7 @@ FI}
 									$ag(conjPos(c,x,y+1), <x,y>)$
 								FI}
 							FI}
-\tadAxioma{adyacentes(campus,p)}{$\{<\pi_1(p)+1,\pi_2(p)+1><\pi_1(p)-1,\pi_2(p)-1><\pi_1(p)+1,\pi_2(p)><\pi_1(p),\pi_2(p)+1> \}$}
+\tadAxioma{adyacentes(c,p)}{$\{<\pi_1(p)+1,\pi_2(p)+1><\pi_1(p)-1,\pi_2(p)-1><\pi_1(p)+1,\pi_2(p)><\pi_1(p),\pi_2(p)+1> \}$}
 
 \tadAxioma{hayObstaculo?(c,p)}{$p \in obstaculos(c)$}
 
@@ -532,10 +529,12 @@ FI}
 \section{Consideraciones}
 \begin{enumerate}
   \item Como no se indica que los hippies y estudiantes deben estar identificados, consideramos que dos instancias con un 
-		hippie|estudiante en la misma posición, son iguales
-  \item El movimiento de los hippies y seguridad siempre se realiza hacia su destino final, en caso de que queden atascados, no vuelven a buscar 
-		otro camino, simplemente se mantienen en la misma posición hasta que, eventualmente, su objetivo se sitúe en una posición alcanzable
-  \item 
+		hippie|estudiante en la misma posici\'on, son iguales
+  \item El movimiento de los estudiantes activa el comportamiento autom\'atico de los hippies y seguridad
+  \item El movimiento de los hippies y seguridad siempre se realiza hacia su destino final, en caso de quedar atascados, no vuelven a buscar 
+		otro camino, se mantienen en el mismo lugar hasta que, eventualmente, su objetivo se sit\'ue en una posici\'on alcanzable
+  \item Para evitar el conflicto que se produce al capturar un estudiante que pertenece a los estudiantes que capturan
+		a un hippie y casos similares, las capturas se realizan al intentar mover a la entidad capturada
 \end{enumerate}
 
 \end{document}

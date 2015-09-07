@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.31)  6 SEP 2015 15:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.31)  6 SEP 2015 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,123 +732,772 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 148.
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-[]$\OML/cmm/m/it/10 capturadoHippie\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; < ^^Y[]
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) + 1\OML/cmm/m/it/10 ;
- ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) \OML/cmm/m/it/1
-0 >
- []
-
-
-Underfull \hbox (badness 5862) in paragraph at lines 180--180
-\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 capturadoHippie\OT1/cmr/m/n/10 (\OML/cmm/m
-/it/10 a; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) \OMS
-/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML
-/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 >
- []
-
-
-Underfull \hbox (badness 5862) in paragraph at lines 180--180
-\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 capturadoHippie\OT1/cmr/m/n/10 (\OML/cmm/m
-/it/10 a; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 )\OML/
-cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) + 
-1 \OML/cmm/m/it/10 >
- []
-
-
-Underfull \hbox (badness 5862) in paragraph at lines 180--180
-\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 capturadoHippie\OT1/cmr/m/n/10 (\OML/cmm/m
-/it/10 a; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 )\OML/
-cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) \O
-MS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1 \OML/cmm/m/it/10 >
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
-[]\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 cercanos\OT1/cmr/m/n/10
- ?(\OML/cmm/m/it/10 a; p[]; posSeg\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; s\OT1/cm
-r/m/n/10 )) \OMS/cmsy/m/n/10 ^[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 hayEst\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 casi
-lleroEnComun\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; p[]; posSeg\OT1/cmr/m/n/10 (\O
-ML/cmm/m/it/10 a; s\OT1/cmr/m/n/10 ))) \OMS/cmsy/m/n/10 ^
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]$\OML/cmm/m/it/10 capturadoEst\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; < ^^Y[]\OT
-1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) + 1\OML/cmm/m/it/10 ; ^^
-Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 >
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 capturadoEst\OT1/cmr/m/n/10 (\OML/cmm/m/it
-/10 a; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) \OMS/cm
-sy/m/n/10 ^^@ \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cm
-m/m/it/10 posSeg\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 >
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 capturadoEst\OT1/cmr/m/n/10 (\OML/cmm/m/it
-/10 a; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 )\OML/cmm
-/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) + 1 \
-OML/cmm/m/it/10 >
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 capturadoEst\OT1/cmr/m/n/10 (\OML/cmm/m/it
-/10 a; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 )\OML/cmm
-/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posSeg\OT1/cmr/m/n/10 ) \OMS/
-cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1 \OML/cmm/m/it/10 >
- []
-
-
-Overfull \hbox (5.29697pt too wide) in paragraph at lines 211--211
+Overfull \hbox (5.29697pt too wide) in paragraph at lines 209--209
 \OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 hippiesMasCerca\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; dameUn
 o\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 ))))))$ 
  []
 
 
-Overfull \hbox (19.52333pt too wide) in paragraph at lines 211--211
+Overfull \hbox (19.52333pt too wide) in paragraph at lines 209--209
 \OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 hippiesMasCerca\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; dameUn
 o\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 ))))))$ 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
+$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
+^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
+$
+ []
+
+
+Overfull \hbox (5.72166pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
+$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
+^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
+$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
+$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
+MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (2.38843pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+
+ []
+
+
+Overfull \hbox (5.72165pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
+$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
+MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (5.72166pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
+$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
+^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
+$
+ []
+
+
+Overfull \hbox (13.58978pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pos\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/1
+0 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10
+ ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/i
+t/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (19.94803pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
+$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
+^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
+$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (2.38843pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+
+ []
+
+
+Overfull \hbox (5.72165pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
+$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
+MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (16.61479pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (19.94801pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
+$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
+MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (5.72166pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
+$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
+^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
+$
+ []
+
+
+Overfull \hbox (13.58978pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pos\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/1
+0 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10
+ ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/i
+t/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (19.94803pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
+$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
+^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
+$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (2.38843pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+
+ []
+
+
+Overfull \hbox (5.72165pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
+$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
+MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (16.61479pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (19.94801pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
+$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
+MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (19.94803pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
+$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
+^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
+$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (27.81615pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pos\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/1
+0 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10
+ ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/i
+t/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (28.2556pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (34.1744pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
+$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
+; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
+^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
+$
+ []
+
+
+Overfull \hbox (28.2556pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (16.61479pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (19.94801pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
+$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
+MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (14.02924pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (28.2556pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (30.84116pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+
+ []
+
+
+Overfull \hbox (28.2556pt too wide) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 validas$ 
+ []
+
+
+Overfull \hbox (34.17438pt too wide) in paragraph at lines 279--279
+[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
+das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
+^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
+$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
+OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
+1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
+MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
+ []
+
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 294.
 [5]
-Overfull \hbox (3.65833pt too wide) in paragraph at lines 226--226
+Overfull \vbox (41.73877pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 294.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 294.
+
+[6]
+Overfull \hbox (3.65833pt too wide) in paragraph at lines 294--294
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -856,7 +1505,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <
  []
 
 
-Underfull \hbox (badness 6284) in paragraph at lines 226--226
+Underfull \hbox (badness 6284) in paragraph at lines 294--294
 \OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 < \
 OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 ; ^^Y[
@@ -865,7 +1514,7 @@ OT1/cmr/m/n/10 1) \OML/cmm/m/it/10 >; <
  []
 
 
-Overfull \hbox (3.65833pt too wide) in paragraph at lines 226--226
+Overfull \hbox (3.65833pt too wide) in paragraph at lines 294--294
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -873,7 +1522,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <
  []
 
 
-Overfull \hbox (17.88469pt too wide) in paragraph at lines 226--226
+Overfull \hbox (17.88469pt too wide) in paragraph at lines 294--294
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -881,7 +1530,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <
  []
 
 
-Overfull \hbox (8.44026pt too wide) in paragraph at lines 226--226
+Overfull \hbox (8.44026pt too wide) in paragraph at lines 294--294
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -889,16 +1538,17 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
+Overfull \hbox (32.89478pt too wide) in paragraph at lines 294--294
 []\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 alto\OT1/cmr/m/n/10 (\O
-ML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )) \OMS
-/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^Y[]
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs
-\OT1/cmr/m/n/10 )) \OML/cmm/m/it/10 <
+ML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))$$\OM
+S/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1)$$\OMS/cmsy/m/n/10 ^^@$$\OML/cmm/m/it/10 ^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+segs\OT1/cmr/m/n/10 ))$$\OML/cmm/m/it/10 <$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it
+/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 ))$
  []
 
 
-Overfull \hbox (17.88469pt too wide) in paragraph at lines 226--226
+Overfull \hbox (17.88469pt too wide) in paragraph at lines 294--294
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -906,7 +1556,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <
  []
 
 
-Overfull \hbox (8.44026pt too wide) in paragraph at lines 226--226
+Overfull \hbox (8.44026pt too wide) in paragraph at lines 294--294
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -914,7 +1564,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
  []
 
 
-Overfull \hbox (17.88469pt too wide) in paragraph at lines 226--226
+Overfull \hbox (17.88469pt too wide) in paragraph at lines 294--294
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -922,7 +1572,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <
  []
 
 
-Overfull \hbox (32.11105pt too wide) in paragraph at lines 226--226
+Overfull \hbox (32.11105pt too wide) in paragraph at lines 294--294
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -930,7 +1580,7 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; <
  []
 
 
-Overfull \hbox (22.66663pt too wide) in paragraph at lines 226--226
+Overfull \hbox (22.66663pt too wide) in paragraph at lines 294--294
 []$\OML/cmm/m/it/10 ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 moverIngreso\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 a; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/
 m/n/10 ))\OML/cmm/m/it/10 ; mover\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/
@@ -938,783 +1588,34 @@ cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
  []
 
 
-Underfull \hbox (badness 7613) in paragraph at lines 226--226
+Overfull \hbox (47.12114pt too wide) in paragraph at lines 294--294
+[]\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 alto\OT1/cmr/m/n/10 (\O
+ML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))$$\OM
+S/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1)$$\OMS/cmsy/m/n/10 ^^@$$\OML/cmm/m/it/10 ^
+^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+segs\OT1/cmr/m/n/10 ))$$\OML/cmm/m/it/10 <$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it
+/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 ))$
+ []
+
+
+Overfull \hbox (29.56155pt too wide) in paragraph at lines 294--294
 []\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 alto\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )) \OMS
-/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^Y[]
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs
-\OT1/cmr/m/n/10 )) \OML/cmm/m/it/10 <
+/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)$$\OMS/cmsy/m/n/10 ^^@$$\OML/cmm/m/it/10 ^^Y
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 se
+gs\OT1/cmr/m/n/10 ))$$\OML/cmm/m/it/10 >$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
+0 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n/10 ))$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
-[]\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 alto\OT1/cmr/m/n/10 (\O
-ML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )) \OMS
-/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^Y[]
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs
-\OT1/cmr/m/n/10 )) \OML/cmm/m/it/10 >
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
-$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
-^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
-$
- []
-
-
-Overfull \hbox (5.72166pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
-$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
-^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
-$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
-$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
-MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Overfull \hbox (2.38843pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
-
- []
-
-
-Overfull \hbox (5.72165pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
-$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
-MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Overfull \hbox (5.72166pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
-$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
-^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
-$
- []
-
-
-Overfull \hbox (13.58978pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pos\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/1
-0 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10
- ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/i
-t/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (19.94803pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
-$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
-^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
-$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (2.38843pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
-
- []
-
-
-Overfull \hbox (5.72165pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
-$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
-MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (16.61479pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
-
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (19.94801pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
-$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
-MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Overfull \hbox (5.72166pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
-$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
-^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
-$
- []
-
-
-Overfull \hbox (13.58978pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pos\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/1
-0 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10
- ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/i
-t/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (19.94803pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
-$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
-^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
-$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (2.38843pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
-
- []
-
-
-Overfull \hbox (5.72165pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
-$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
-MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (16.61479pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
-
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (19.94801pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
-$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
-MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (19.94803pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
-$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
-^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
-$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (27.81615pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pos\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/1
-0 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10
- ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/i
-t/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (28.2556pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (34.1744pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$^
-^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$+$$1\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 >
-$$<$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
-; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^
-^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))
-$
- []
-
-
-Overfull \hbox (28.2556pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (16.61479pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
-
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (19.94801pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
-$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
-MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (14.02924pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (28.2556pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (30.84116pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@$$
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p$$\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$+$$1$$\OML/cmm/m/it/10 >$$\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
-
- []
-
-
-Overfull \hbox (28.2556pt too wide) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 validas$ 
- []
-
-
-Overfull \hbox (34.17438pt too wide) in paragraph at lines 296--296
-[]\T1/cmr/bx/n/10 if $\OMS/cmsy/m/n/10 ;\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 vali
-das\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a;$$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 <$$
-^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@
-$$\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 )$$\OML/cmm/m/it/10 ><$$^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT
-1/cmr/m/n/10 )$$\OMS/cmsy/m/n/10 ^^@$$\OT1/cmr/m/n/10 1$$\OML/cmm/m/it/10 >$$\O
-MS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
-[]$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 entCerca\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;$
- []
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
-[6]
-Overfull \vbox (41.73877pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 313--313
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []$\OML/cmm/m/it/10 hipEncerradoEst\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 a; p; ady
 acentes\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
 0 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; p\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 ^
  []
 
 
-Overfull \hbox (34.1965pt too wide) in paragraph at lines 329--329
+Overfull \hbox (34.1965pt too wide) in paragraph at lines 326--326
 []$\OML/cmm/m/it/10 haySeg\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 a; p; seguridad\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))$ $\OMS/cmsy/m/n/10 ^$ $\OML/
 cmm/m/it/10 hipEncerradoSeg\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 a; p; sinUno\OT1/
@@ -1722,21 +1623,45 @@ cmr/m/n/10 (\OML/cmm/m/it/10 adys\OT1/cmr/m/n/10 ))$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []$\OML/cmm/m/it/10 haySeg\OT1/cmr/m/n/10 ?(\OML/cmm/m/it/10 a; p; seguridad\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))$ $\OMS/cmsy/m/n/10 ^$
  []
 
-
-Overfull \hbox (63.63971pt too wide) in paragraph at lines 349--349
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 340.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 340.
+[7]
+Overfull \hbox (56.97302pt too wide) in paragraph at lines 346--346
 []$\OML/cmm/m/it/10 proxPoss\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; estsCerca\OT1/
 cmr/m/n/10 (\OML/cmm/m/it/10 dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 possHippi
 es\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
-possHippies\OT1/cmr/m/n/10 )))\OMS/cmsy/m/n/10 [$ 
+possHippies\OT1/cmr/m/n/10 )))$ 
  []
 
 
-Overfull \hbox (31.69154pt too wide) in paragraph at lines 351--351
+Overfull \hbox (31.69154pt too wide) in paragraph at lines 348--348
 []$\OML/cmm/m/it/10 minDistsPos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 campus\OT1/cmr
 /m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 seg\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; posHippies\OT1/cm
@@ -1744,40 +1669,40 @@ r/m/n/10 (\OML/cmm/m/it/10 a; conjPos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 campus\O
 T1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 ))))$ 
  []
 
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 353.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 353.
-[8]
-Underfull \hbox (badness 1221) in paragraph at lines 384--384
+
+Underfull \hbox (badness 1221) in paragraph at lines 381--381
 []\T1/cmr/bx/n/10 if $\OT1/cmr/m/n/10 #\OML/cmm/m/it/10 capturas\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 a; dameUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 segs\OT1/cmr/m/n
 /10 ))$ $\OMS/cmsy/m/n/10 ^^U$ $\OML/cmm/m/it/10 maxCapturas\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 a; segs\OT1/cmr/m/n/10 )$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 420.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 420.
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
 []$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 hayObstaculo\OT1/cmr/m/n/10 ?(\OML/cmm/m/i
 t/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  ; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 ) + 1\OML/cmm/m/it
@@ -1786,7 +1711,7 @@ t/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
 []$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 hayObstaculo\OT1/cmr/m/n/10 ?(\OML/cmm/m/i
 t/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  ; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10
@@ -1795,7 +1720,7 @@ t/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
 []$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 hayObstaculo\OT1/cmr/m/n/10 ?(\OML/cmm/m/i
 t/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  ; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
@@ -1804,7 +1729,7 @@ t/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
+Underfull \hbox (badness 10000) in paragraph at lines 420--420
 []$\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 hayObstaculo\OT1/cmr/m/n/10 ?(\OML/cmm/m/i
 t/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  ; < ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 
@@ -1813,112 +1738,95 @@ t/10 campus\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 440.
 [9]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 445.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 445.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 445.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 445.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 445.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 445.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 472.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 472.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 472.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 472.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 472.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 472.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 472.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 472.
  [10]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 448.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 448.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 448.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 448.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 448.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 448.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 475.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 475.
- [11]
-Overfull \hbox (10.90703pt too wide) in paragraph at lines 498--498
+Underfull \hbox (badness 10000) in paragraph at lines 485--485
+[]$\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 ) \
+OML/cmm/m/it/10 < ancho \OMS/cmsy/m/n/10 ^ \OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 < alto \OMS/cmsy/m/n/10
+ ^
+ []
+
+
+Overfull \hbox (10.90703pt too wide) in paragraph at lines 495--495
 []$\OML/cmm/m/it/10 Ag\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 minDistsPos\OT1/cmr/m/n
 /10 (\OML/cmm/m/it/10 c; sinUno\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posiciones\OT1
 /cmr/m/n/10 ))\OML/cmm/m/it/10 ;$ 
  []
 
 
-Overfull \hbox (10.5285pt too wide) in paragraph at lines 498--498
+Overfull \hbox (10.5285pt too wide) in paragraph at lines 495--495
 []$\OML/cmm/m/it/10 minDistsPos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c; seg; sinUno
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 posiciones\OT1/cmr/m/n/10 ))$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--507
+Underfull \hbox (badness 10000) in paragraph at lines 504--504
 \OML/cmm/m/it/10 minDist\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c; pos=p; sinUno\OT1/
 cmr/m/n/10 (\OML/cmm/m/it/10 posiciones\OT1/cmr/m/n/10 ))$
  []
 
 
-Overfull \hbox (20.55751pt too wide) in paragraph at lines 508--508
+Overfull \hbox (20.55751pt too wide) in paragraph at lines 505--505
 []$\OML/cmm/m/it/10 restaAbs\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n
 /10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 ))$\T1/cmr/m/n/10 +$\OML/cmm/m/it/10 re
@@ -1927,62 +1835,160 @@ p[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p
 []\OT1/cmr/m/n/10 ))$ 
  []
 
-
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 522.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 522.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 522.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 522.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 522.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 522.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 524.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 524.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 524.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 524.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 524.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 524.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 526.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 526.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 526.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 526.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 526.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 526.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 528.
+[11]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 528.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 528.
+ [12]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 529.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 529.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 529.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 529.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 529.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 529.
+ 
 AED: lastpage setting LastPage
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 525.
-[12]
+(babel)             in language  on input line 540.
+[13]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 525.
+(babel)             in language  on input line 540.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 525.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 525.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 525.
+(babel)             in language  on input line 540.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 540.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 540.
  (./tp1.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 525.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 525.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 540.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 540.
 Package rerunfilecheck Info: File `tp1.out' has not changed.
-(rerunfilecheck)             Checksum: E459214D9C44E998D3382E9F0B25967D;86.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 525.
+(rerunfilecheck)             Checksum: BD2E519F2FE10EA600AF16A65F27A728;314.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 540.
  ) 
 Here is how much of TeX's memory you used:
- 7885 strings out of 493304
- 110256 string characters out of 6139871
- 232181 words of memory out of 5000000
- 11202 multiletter control sequences out of 15000+600000
+ 7899 strings out of 493304
+ 110372 string characters out of 6139871
+ 234942 words of memory out of 5000000
+ 11207 multiletter control sequences out of 15000+600000
  16598 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  35i,16n,67p,646b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2001,10 +2007,10 @@ are/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 tt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc1000.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfxc1440.pfb>
-Output written on tp1.pdf (12 pages, 246014 bytes).
+Output written on tp1.pdf (13 pages, 258164 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 16 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
