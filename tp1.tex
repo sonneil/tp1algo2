@@ -171,10 +171,10 @@ $\neg(hippiesAlrededor(a,p_2)\geq 2)$ ELSE $hayEst?(a,p)$ FI} FI}
 \tadAxioma{\#capturas(sacarEst($a,p_1$),$s$)}{$\#capturas(a,s)$}
 
 \tadAxioma{\#capturas(moverEst($a,p_1,p_2$),$s$)}{
-$capturadoHippie(a,<$\,$\pi_1(posSeg)$\,$+$\,$1,\pi_2(posSeg)$\,$>) +$
-\\$capturadoHippie(a,<$\,$\pi_1(posSeg)$\,$-$\,$1,\pi_2(posSeg)>) +$
-\\$capturadoHippie(a,<$\,$\pi_1(posSeg),\pi_2(posSeg)$\,$+$\,$1$\,$>) +$
-\\$capturadoHippie(a,<$\,$\pi_1(posSeg),\pi_2(posSeg)$\,$-$\,$1$\,$>) +$
+$capturadoHippie(a,<$\,$\pi_1(posSeg(a,s))$\,$+$\,$1,\pi_2(posSeg(a,s))$\,$>) +$
+\\$capturadoHippie(a,<$\,$\pi_1(posSeg(a,s))$\,$-$\,$1,\pi_2(posSeg(a,s))>) +$
+\\$capturadoHippie(a,<$\,$\pi_1(posSeg(a,s)),\pi_2(posSeg(a,s))$\,$+$\,$1$\,$>) +$
+\\$capturadoHippie(a,<$\,$\pi_1(posSeg(a,s)),\pi_2(posSeg(a,s))$\,$-$\,$1$\,$>) +$
 \\$\#capturas(a,s)$
 }
 
@@ -188,10 +188,10 @@ $capturadoHippie(a,<$\,$\pi_1(posSeg)$\,$+$\,$1,\pi_2(posSeg)$\,$>) +$
 
 
 \tadAxioma{\#sanciones(moverEst($a,p_1,p_2$),$s$)}{
-$capturadoEst(a,<$\,$\pi_1(posSeg)$\,$+$\,$1,\pi_2(posSeg)$\,$>) +$
-\\$capturadoEst(a,<\pi_1(posSeg)-1,\pi_2(posSeg)>) +$
-\\$capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)+1>) +$
-\\$capturadoEst(a,<\pi_1(posSeg),\pi_2(posSeg)-1>) +$
+$capturadoEst(a,<$\,$\pi_1(posSeg(a,s))$\,$+$\,$1,\pi_2(posSeg(a,s))$\,$>) +$
+\\$capturadoEst(a,<\pi_1(posSeg(a,s))-1,\pi_2(posSeg(a,s))>) +$
+\\$capturadoEst(a,<\pi_1(posSeg(a,s)),\pi_2(posSeg(a,s))+1>) +$
+\\$capturadoEst(a,<\pi_1(posSeg(a,s)),\pi_2(posSeg(a,s))-1>) +$
 \\$\#sanciones(a,s)$
 }
 
