@@ -49,8 +49,8 @@
 % Estos comandos deben ir antes del \maketitle
 \materia{Algoritmos y Estructuras de Datos II} % obligatorio
 \submateria{Primer Cuatrimestre de 2015} % opcional
-\titulo{Trabajo Pr�ctico 1} % obligatorio
-\subtitulo{Especificaci�n} % opcional
+\titulo{Trabajo Pr\'actico 1} % obligatorio
+\subtitulo{Especificaci\'on} % opcional
 
 
 \integrante{BENITEZ, Nelson}{945/13}{nelson.benitez92@gmail.com} % obligatorio 
@@ -70,11 +70,23 @@
 \begin{tad}{\tadNombre{AS}}
 \tadGeneros{as}
 
-\tadIgualdadObservacional{facu}{facu'}{as}{campus(facu)=campus(facu')  \\$\land$ seguridad(facu)=seguridad(facu') \\$\land$ (\paratodo{p}{pos})(posValida(campus(facu),p)) hayEst?(facu,p)$\iff$hayEst?(facu',p) $\land$ (\paratodo{p}{pos})(posValida(campus(facu),p)) hayHippie?(facu,p)$\iff$hayHippie?(facu',p) $\land$ (\paratodo{s}{seg})(s$\in$seguridad(a))\\ (\#capturas(facu,s)=\#capturas(facu',s) \\$\land$ \#sanciones(facu,s)=\#sanciones(facu',s))}
+\tadIgualdadObservacional{as}{as'}{AS}{campus(as)=campus(as')  
+										  \\$\yluego$ seguridad(as)$\igobs$seguridad(as') 
+										  \\
+										  \\$\yluego$ (\paratodo{p}{pos})(posValida(campus(as),p)) 
+										  \\ hayEst?(as,p)$\iff$hayEst?(as',p) 
+										  \\
+										  \\$\land$ (\paratodo{p}{pos})(posValida(campus(as),p)) 
+										  \\ hayHippie?(as,p)$\iff$hayHippie?(as',p) 
+										  \\
+										  \\$\land$ (\paratodo{s}{seg})(s$\in$seguridad(as))
+										  \\ (\#capturas(as,s)$\igobs$\#capturas(as',s) 
+										  \\
+										  \\$\land$ \#sanciones(as,s)$\igobs$\#sanciones(as',s))}
 
-\tadUsa{\tadNombre{campus},\tadNombre{bool},\tadNombre{nat},\tadNombre{tupla},\tadNombre{seg}}
+\tadUsa{\tadNombre{campus},\tadNombre{bool},\tadNombre{nat},\tadNombre{pos},\tadNombre{seguridad}}
 
-\tadExporta{\tadNombre{as},generadores, observadores,\#hippies,\#estudiantes,\#masVigilante }
+\tadExporta{\tadNombre{as},generadores, observadores,\#hippies,\#estudiantes,masVigilante }
 
 \tadObservadores
 \tadOperacion{campus}{as}{campus}{}
@@ -448,6 +460,11 @@ FI}
 \section{TAD \tadNombre{campus}}
 \begin{tad}{\tadNombre{campus}}
 \tadGeneros{campus}
+
+
+\tadIgualdadObservacional{c}{c'}{Campus}{alto(c)$\igobs$alto(c') $\land$
+										\\ancho(c)$\igobs$ancho(c') $\land$
+										\\obstaculos(c)$\igobs$obstaculos(c')}
 
 \tadUsa{\tadNombre{bool},\tadNombre{nat},\tadNombre{tupla}}
 
