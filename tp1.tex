@@ -195,6 +195,33 @@ $capturadoEst(a,<$\,$\pi_1(posSeg)$\,$+$\,$1,\pi_2(posSeg)$\,$>) +$
 \\$\#sanciones(a,s)$
 }
 
+
+%% Otras operaciones exportadas %%
+
+\tadAxioma{\#hippies(a)}{$\#(posHippies(a,conjPos(campus(a))))$}
+\tadAxioma{\#estudiantes(a)}{$\#(posEsts(a,conjPos(campus(a))))$}
+								  
+\tadAxioma{masVigilante(a)}{$dameUno(masCapturas(a,seguridad(a)))$}
+\tadAxioma{masCapturas(a,segs)}{\IF $\neg(\emptyset?(segs))$ THEN	
+									{\IF $\#capturas(a,dameUno(segs))$ $\ge$ $maxCapturas(a,segs)$ 
+									THEN 
+										$ag(masCapturas(a,sinUno(segs)), dameUno(segs))$ 
+									ELSE 
+										$masCapturas(a,sinUno(segs))$ 
+									FI}
+								ELSE
+									$\emptyset$
+								FI}
+\tadAxioma{maxCapturas(a,segs)}{\IF $\emptyset?(segs)$ THEN 
+									$0$ 
+								ELSE
+									{\IF $\#capturas(a,dameUno(segs))$ $\ge$ \\ $maxCapturas(a,sinUno(segs))$ \\THEN
+										$\#capturas(a,dameUno(segs))$
+									ELSE 
+										$maxCapturas(a,sinUno(segs))$
+									FI}
+								FI}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Axiomas otras operaciones%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \tadAxioma{moverTodos(a,segs)}{\IF $(\emptyset?(segs))$ THEN 
 								   $\emptyset$ 
@@ -364,30 +391,6 @@ $capturadoEst(a,<$\,$\pi_1(posSeg)$\,$+$\,$1,\pi_2(posSeg)$\,$>) +$
 										$posEsts(a,sinUno(conjpos))$
 									FI}
 								 FI}
-
-\tadAxioma{\#hippies(a)}{$\#(posHippies(a,conjPos(campus(a))))$}
-\tadAxioma{\#estudiantes(a)}{$\#(posEsts(a,conjPos(campus(a))))$}
-								  
-\tadAxioma{masVigilante(a)}{$dameUno(masCapturas(a,seguridad(a)))$}
-\tadAxioma{masCapturas(a,segs)}{\IF $\neg(\emptyset?(segs))$ THEN	
-									{\IF $\#capturas(a,dameUno(segs))$ $\ge$ $maxCapturas(a,segs)$ 
-									THEN 
-										$ag(masCapturas(a,sinUno(segs)), dameUno(segs))$ 
-									ELSE 
-										$masCapturas(a,sinUno(segs))$ 
-									FI}
-								ELSE
-									$\emptyset$
-								FI}
-\tadAxioma{maxCapturas(a,segs)}{\IF $\emptyset?(segs)$ THEN 
-									$0$ 
-								ELSE
-									{\IF $\#capturas(a,dameUno(segs))$ $\ge$ \\ $maxCapturas(a,sinUno(segs))$ \\THEN
-										$\#capturas(a,dameUno(segs))$
-									ELSE 
-										$maxCapturas(a,sinUno(segs))$
-									FI}
-								FI}
 
 \tadAxioma{captura?($a,p$)}{
 
